@@ -23,7 +23,7 @@
   function loadStage() {
     stage = stages[stageIndex];
     hazards = stage.hazards.map((h) => ({...h, passed:false}));
-    coins = stage.coins.map((x, i) => ({x, y: i % 3 === 0 ? 300 : (i % 3 === 1 ? 330 : 350), taken:false, phase:i * .7}));
+    coins = stage.coins.map((x, i) => ({x, y: i % 3 === 0 ? 330 : (i % 3 === 1 ? 355 : 375), taken:false, phase:i * .7}));
     player.x = 120; player.y = GROUND - player.h; player.vy = 0; player.onGround = true; player.runFrame = 0; cameraX = 0;
     ui.level.textContent = String(stageIndex + 1).padStart(2,"0") + " / " + stage.name;
     updateHud();
@@ -45,7 +45,7 @@
       const next = hazards.find(h => !h.passed && h.x + h.w > player.x + 2);
       if (next) {
         const distance = next.x - (player.x + player.w);
-        if (distance <= 92 && distance > -8) jump();
+        if (distance <= 75 && distance > -8) jump();
       }
     }
     player.x += SPEED * dt;
