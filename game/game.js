@@ -88,10 +88,12 @@
     }
   ];
 
+  function readNumber(key,fallback){try{return Number(localStorage.getItem(key))||fallback;}catch(_){return fallback;}}
+
   const state = {
-    index:0, score:0, coins:0, lives:3, runs:1, best:Number(localStorage.getItem("bongRunnerBest") || 0),
+    index:0, score:0, coins:0, lives:3, runs:1, best:readNumber("bongRunnerBest",0),
     auto:true, paused:false, sound:false, started:false, time:0, last:0, camera:0,
-    transition:0, messageTimer:0, shake:0, distanceScore:0, maxUnlocked:Number(localStorage.getItem("bongRunnerUnlocked") || 0)
+    transition:0, messageTimer:0, shake:0, distanceScore:0, maxUnlocked:readNumber("bongRunnerUnlocked",0), lastTrailTick:-1
   };
   const player = {x:140,y:GROUND-58,w:40,h:58,vy:0,grounded:true,run:0,blink:0,trail:[]};
   let level = worlds[0], hazards = [], coins = [], particles = [], audioContext = null;
@@ -193,7 +195,7 @@
     if(!state.auto || !player.grounded) return;
     const next=nearestHazard(); if(!next) return;
     const h=next.hazard;
-    const lead= h.type==="gap" ? 94 : 99;
+    const lead= h.type==="gap" ? 70 : 99;
     if(next.distance<=lead && next.distance>-12) triggerJump();
   }
   function rectsOverlap(a,b) {
@@ -203,7 +205,7 @@
     if(h.type==="crate") return {x:h.x+5,y:GROUND-h.h+5,w:h.w-10,h:h.h-5};
     if(h.type==="spikes") return {x:h.x+5,y:GROUND-h.h+6,w:h.w-10,h:h.h-6};
     if(h.type==="saw") return {x:h.x+5,y:GROUND-38,w:h.w-10,h:34};
-    if(h.type==="drone") return {x:h.x+4,y:GROUND-104+Math.sin(state.time*2.1+h.phase)*12,w:h.w-8,h:30};
+    if(h.type==="drone") return {x:h.x+4,y:GROUND-66+Math.sin(state.time*2.1+h.phase)*8,w:h.w-8,h:30};
     return null;
   }
   function respawn() {
@@ -439,7 +441,7 @@
     ctx.fillStyle="#c4ceef";ctx.beginPath();ctx.arc(0,0,4,0,Math.PI*2);ctx.fill();ctx.restore();
   }
   function drawDrone(h,x){
-    const y=GROUND-104+Math.sin(state.time*2.1+h.phase)*12;
+    const y=GROUND-66+Math.sin(state.time*2.1+h.phase)*8;
     ctx.save();ctx.translate(x+h.w/2,y+h.h/2);
     ctx.shadowColor=level.theme.glow;ctx.shadowBlur=18;
     rounded(-23,-12,46,24,10,"#283653");ctx.shadowBlur=0;
@@ -495,7 +497,7 @@
 
     for(let i=player.trail.length-1;i>=0;i--){
       const p=player.trail[i],tx=p.x-state.camera;
-      ctx.globalAlpha=(1-i/player.trail.length)*.11;rounded(tx,p.y+7,player.w-6,player.h-12,11,level.theme.accent);
+      ctx.globalAlpha=(i/player.trail.length)*.12;rounded(tx,p.y+7,player.w-6,player.h-12,11,level.theme.accent);
     }
     ctx.globalAlpha=1;
 
@@ -585,7 +587,7 @@
   document.addEventListener("visibilitychange",()=>{if(document.hidden&&!state.paused){state.paused=true;updateUI();}});
   $("autoBtn").addEventListener("click",()=>setAutopilot(!state.auto));
   $("pauseBtn").addEventListener("click",togglePause);
-  $("restartBtn").addEventListener("click",restart);
+  $("restartBtn").addEventListener("click",restart);\n  $("jumpBtn").addEventListener("click",()=>{if(state.auto)setAutopilot(false);triggerJump();});
   $("soundBtn").addEventListener("click",toggleSound);
   document.querySelectorAll(".world-card").forEach((button)=>button.addEventListener("click",()=>chooseLevel(Number(button.dataset.level))));
   canvas.addEventListener("pointerdown",()=>{if(!state.auto)triggerJump();});
