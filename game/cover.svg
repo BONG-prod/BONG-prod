@@ -1,32 +1,56 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+<title id="title">BONG RUNNER — six-world platform adventure</title>
+<desc id="desc">A premium illustrated arcade banner with the original BONG Runner robot, glowing portals and six worlds.</desc>
 <defs>
-<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#17294b"/><stop offset="1" stop-color="#35466e"/></linearGradient>
-<linearGradient id="title" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#88a4ff"/><stop offset=".55" stop-color="#a18aff"/><stop offset="1" stop-color="#c49bff"/></linearGradient>
-<linearGradient id="ground" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#7189d8"/><stop offset=".12" stop-color="#263b55"/><stop offset="1" stop-color="#111b2d"/></linearGradient>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b1120"/><stop offset=".55" stop-color="#18284a"/><stop offset="1" stop-color="#241a42"/></linearGradient>
+ <linearGradient id="titleGrad" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#83a5ff"/><stop offset=".52" stop-color="#a08bff"/><stop offset="1" stop-color="#d0a1ff"/></linearGradient>
+ <linearGradient id="platform" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#718be6"/><stop offset=".12" stop-color="#263c60"/><stop offset="1" stop-color="#10192d"/></linearGradient>
+ <radialGradient id="blueGlow"><stop stop-color="#6585ff" stop-opacity=".42"/><stop offset="1" stop-color="#6585ff" stop-opacity="0"/></radialGradient>
+ <radialGradient id="violetGlow"><stop stop-color="#a16ee8" stop-opacity=".36"/><stop offset="1" stop-color="#a16ee8" stop-opacity="0"/></radialGradient>
+ <filter id="blur"><feGaussianBlur stdDeviation="20"/></filter>
+ <filter id="soft"><feGaussianBlur stdDeviation="5"/></filter>
+ <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#b2c4ff" stroke-opacity=".055"/></pattern>
 </defs>
-<rect width="1200" height="420" rx="26" fill="#0c1220"/>
-<rect x="18" y="18" width="1164" height="384" rx="20" fill="url(#sky)"/>
-<g fill="#e4eaff" opacity=".7"><circle cx="860" cy="72" r="2"/><circle cx="980" cy="104" r="2"/><circle cx="1080" cy="62" r="2"/><circle cx="780" cy="135" r="2"/><circle cx="650" cy="82" r="2"/><circle cx="1120" cy="170" r="2"/></g>
-<circle cx="1000" cy="114" r="54" fill="#c6caff" opacity=".12"/><circle cx="1000" cy="114" r="32" fill="#d8dcff" opacity=".18"/>
-<path d="M18 283 Q140 190 270 280 T520 270 T780 280 T1030 265 T1182 270 V402 H18Z" fill="#26395f"/>
-<path d="M18 320 Q160 245 310 315 T600 310 T900 315 T1182 300 V402 H18Z" fill="#1a2b4b"/>
-<rect x="18" y="335" width="1164" height="67" fill="url(#ground)"/>
-<rect x="18" y="335" width="1164" height="5" fill="#7d98ed"/>
-<g fill="#ffd66e" stroke="#fff1b8" stroke-width="3"><circle cx="500" cy="270" r="11"/><circle cx="552" cy="246" r="11"/><circle cx="604" cy="270" r="11"/><circle cx="870" cy="286" r="11"/></g>
-<g transform="translate(250 270)">
-<ellipse cx="16" cy="72" rx="27" ry="6" fill="#070d18" opacity=".45"/>
-<rect x="3" y="38" width="12" height="28" rx="4" fill="#314b91"/><rect x="19" y="38" width="12" height="28" rx="4" fill="#314b91"/>
-<rect x="0" y="62" width="17" height="7" rx="3" fill="#a9bcff"/><rect x="18" y="62" width="17" height="7" rx="3" fill="#a9bcff"/>
-<rect x="1" y="24" width="33" height="28" rx="7" fill="#6685e7"/><rect x="0" y="29" width="35" height="8" rx="3" fill="#a37de7"/>
-<rect x="-1" y="0" width="37" height="31" rx="10" fill="#dce5ff"/><rect x="3" y="5" width="29" height="21" rx="7" fill="#657cc2"/><rect x="7" y="11" width="21" height="9" rx="4" fill="#101a32"/>
-<rect x="11" y="13" width="5" height="4" fill="#aaf3df"/><rect x="21" y="13" width="5" height="4" fill="#aaf3df"/>
+<rect width="1200" height="420" rx="26" fill="#080e19"/>
+<rect x="12" y="12" width="1176" height="396" rx="22" fill="url(#bg)"/>
+<rect x="12" y="12" width="1176" height="396" rx="22" fill="url(#grid)"/>
+<ellipse cx="915" cy="195" rx="360" ry="270" fill="url(#blueGlow)"/>
+<ellipse cx="1070" cy="330" rx="260" ry="190" fill="url(#violetGlow)"/>
+<g fill="#e0e8ff" opacity=".65"><circle cx="720" cy="62" r="2"/><circle cx="840" cy="95" r="2"/><circle cx="1040" cy="66" r="2"/><circle cx="1123" cy="143" r="2"/><circle cx="955" cy="48" r="1.5"/><circle cx="678" cy="155" r="1.5"/><circle cx="1110" cy="215" r="1.5"/></g>
+<circle cx="1015" cy="128" r="54" fill="#c2caff" opacity=".08"/><circle cx="1015" cy="128" r="37" fill="#c2caff" opacity=".1"/>
+<path d="M12 302 Q130 235 245 293 T468 290 T710 282 T936 292 T1188 270 V408 H12Z" fill="#27375e"/>
+<path d="M12 330 Q160 270 305 327 T590 315 T850 323 T1188 300 V408 H12Z" fill="#1a2949"/>
+<g fill="#111d35" opacity=".8"><rect x="760" y="230" width="62" height="85"/><rect x="834" y="195" width="45" height="120"/><rect x="892" y="220" width="58" height="95"/><rect x="970" y="180" width="65" height="135"/><rect x="1051" y="235" width="58" height="80"/></g>
+<g fill="#a5b8ff" opacity=".22"><path d="M772 246h8v10h-8zm20 0h8v10h-8zm-20 22h8v10h-8zm20 0h8v10h-8zm57-55h7v10h-7zm17 0h7v10h-7zm-17 23h7v10h-7zm17 0h7v10h-7zm72 19h8v10h-8zm20 0h8v10h-8zm-20 22h8v10h-8zm84-70h8v10h-8zm20 0h8v10h-8zm-20 22h8v10h-8z"/></g>
+<rect x="12" y="334" width="1176" height="74" fill="url(#platform)"/><rect x="12" y="334" width="1176" height="5" fill="#829cf4"/>
+<path d="M12 365H1188" stroke="#a9b9ff" stroke-opacity=".1" stroke-width="1"/><path d="M12 389H1188" stroke="#a9b9ff" stroke-opacity=".07" stroke-width="1"/>
+<g fill="#ffd977" stroke="#fff1bd" stroke-width="2"><circle cx="694" cy="268" r="11"/><circle cx="746" cy="240" r="11"/><circle cx="798" cy="268" r="11"/><circle cx="1080" cy="280" r="11"/></g>
+<g transform="translate(937 171)">
+ <ellipse cx="28" cy="167" rx="57" ry="9" fill="#060b16" opacity=".52"/>
+ <ellipse cx="28" cy="152" rx="68" ry="13" fill="#7d8fe3" opacity=".18"/>
+ <rect x="4" y="105" width="17" height="44" rx="7" fill="#354b84"/><rect x="35" y="105" width="17" height="44" rx="7" fill="#354b84"/>
+ <rect x="0" y="143" width="25" height="11" rx="5" fill="#b1c1ff"/><rect x="32" y="143" width="25" height="11" rx="5" fill="#b1c1ff"/>
+ <path d="M8 66 Q-14 55 -23 77 L-8 83 L10 80" fill="#a17de9"/>
+ <rect x="4" y="72" width="50" height="51" rx="14" fill="#617fdb"/><rect x="1" y="82" width="56" height="12" rx="5" fill="#a17de9"/>
+ <rect x="0" y="0" width="58" height="48" rx="17" fill="#e3ebff"/><rect x="6" y="6" width="46" height="34" rx="12" fill="#687ebc"/>
+ <rect x="11" y="15" width="36" height="17" rx="7" fill="#101b35"/><rect x="17" y="20" width="7" height="6" rx="2" fill="#a8ffe7"/><rect x="34" y="20" width="7" height="6" rx="2" fill="#a8ffe7"/>
+ <path d="M9 9h14" stroke="#fff" stroke-opacity=".72" stroke-width="3" stroke-linecap="round"/>
+ <circle cx="29" cy="88" r="5" fill="#b6fff0"/><circle cx="29" cy="88" r="12" fill="#85ffe0" opacity=".17" filter="url(#soft)"/>
 </g>
-<g transform="translate(72 82)">
-<text x="0" y="0" fill="#adbbff" font-family="Arial,sans-serif" font-size="16" font-weight="700" letter-spacing="5">BONG-PROD ARCADE</text>
-<text x="-2" y="88" fill="#f4f6ff" font-family="Arial,sans-serif" font-size="76" font-weight="800" letter-spacing="-4">BONG <tspan fill="url(#title)">RUNNER</tspan></text>
-<text x="2" y="126" fill="#d1d9ef" font-family="Arial,sans-serif" font-size="20">AUTOPILOT PLATFORM ADVENTURE</text>
-<rect x="0" y="161" width="196" height="44" rx="10" fill="url(#title)"/>
-<text x="98" y="189" text-anchor="middle" fill="#0e1423" font-family="Arial,sans-serif" font-size="15" font-weight="800" letter-spacing="2">PLAY NOW  →</text>
+<g transform="translate(1094 205)" fill="none" stroke="url(#titleGrad)">
+ <ellipse cx="0" cy="0" rx="21" ry="57" stroke-width="4"/><ellipse cx="0" cy="0" rx="45" ry="22" stroke-width="2" transform="rotate(-28)"/><ellipse cx="0" cy="0" rx="34" ry="48" stroke-opacity=".5" stroke-width="1.5" transform="rotate(35)"/>
 </g>
-<rect x="18" y="18" width="1164" height="384" rx="20" fill="none" stroke="#b5c2ff" stroke-opacity=".2"/>
+<g transform="translate(70 78)">
+ <text x="0" y="0" fill="#aebcff" font-family="Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="4">BONG-PROD ARCADE / 001</text>
+ <text x="-3" y="94" fill="#f4f6ff" font-family="Arial,sans-serif" font-size="83" font-weight="800" letter-spacing="-5">BONG <tspan fill="url(#titleGrad)">RUNNER</tspan></text>
+ <text x="2" y="132" fill="#d1daf1" font-family="Arial,sans-serif" font-size="18" letter-spacing="2">SIX WORLDS. ONE VERY DETERMINED BOT.</text>
+ <g transform="translate(2 165)" font-family="Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1.3">
+  <rect width="118" height="31" rx="8" fill="#718cff" fill-opacity=".17" stroke="#829dff" stroke-opacity=".38"/><text x="59" y="20" text-anchor="middle" fill="#c6d2ff">AUTO PILOT</text>
+  <rect x="129" width="105" height="31" rx="8" fill="#9c7bea" fill-opacity=".13" stroke="#b494ff" stroke-opacity=".35"/><text x="181" y="20" text-anchor="middle" fill="#ddc8ff">6 WORLDS</text>
+  <rect x="245" width="116" height="31" rx="8" fill="#7de0c1" fill-opacity=".1" stroke="#7de0c1" stroke-opacity=".3"/><text x="303" y="20" text-anchor="middle" fill="#a9f2db">HIGH SCORE</text>
+ </g>
+ <text x="2" y="245" fill="#8998b8" font-family="Arial,sans-serif" font-size="14">RUN · JUMP · COLLECT · REPEAT</text>
+</g>
+<rect x="12.5" y="12.5" width="1175" height="395" rx="21.5" fill="none" stroke="#b7c5ff" stroke-opacity=".17"/>
 </svg>
