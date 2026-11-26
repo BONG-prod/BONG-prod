@@ -39,3 +39,5 @@ footer{min-height:62px;border-top:1px solid var(--line);display:flex;align-items
 .world-card.cleared:after{position:absolute;top:9px;right:9px;content:'✓';width:17px;height:17px;display:grid;place-items:center;border:1px solid rgba(125,229,195,.3);border-radius:50%;background:rgba(76,184,148,.12);color:#9ce8d2;font:10px 'DM Mono',monospace}.world-card.cleared .world-number{color:#91dac4}
 
 .duck-button{border-color:rgba(143,205,255,.25);background:rgba(87,145,192,.1)}.duck-button:active{background:rgba(87,145,192,.22)}
+
+.duck-button{min-width:88px}.world-card:nth-child(7) .world-symbol{color:#ffd58b}.world-card:nth-child(8) .world-symbol{color:#9df0b8}.world-card:nth-child(9) .world-symbol{color:#ff9a70}.world-card:nth-child(10) .world-symbol{color:#c3a7ff}
