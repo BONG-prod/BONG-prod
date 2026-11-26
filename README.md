@@ -64,6 +64,20 @@
   <img src="https://img.shields.io/badge/MongoDB-111827?style=for-the-badge&logo=mongodb&logoColor=47A248" alt="MongoDB" />
 </div>
 
+## 🎮 BONG RUNNER — browser game
+
+<a href="https://bong-prod.github.io/BONG-prod/">
+  <img src="game/cover.svg" alt="BONG RUNNER — play the auto-running platform adventure" width="100%" />
+</a>
+
+<div align="center">
+  <a href="https://bong-prod.github.io/BONG-prod/"><img src="https://img.shields.io/badge/▶%20PLAY%20BONG%20RUNNER-586FE0?style=for-the-badge&labelColor=111827" alt="Play BONG Runner" /></a>
+</div>
+
+Небольшой браузерный платформер с автопилотом: персонаж сам бежит, рассчитывает прыжки, собирает монеты и проходит четыре авторских этапа. Можно отключить автопилот и управлять прыжками самостоятельно.
+
+`HTML` `CSS` `JavaScript` `Canvas` `GitHub Pages`
+
 ## 🐍 Contribution snake
 
 <picture>
