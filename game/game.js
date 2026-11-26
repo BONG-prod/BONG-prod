@@ -60,7 +60,7 @@
       name:"Ember Foundry", subtitle:"Hot metal & sparks", icon:"♨", scene:"foundry", length:4300, speed:4.95,
       theme:{top:"#281728",bottom:"#6e3c45",far:"#5c3546",mid:"#422b3d",ground:"#382a35",topline:"#f4a06f",accent:"#ff986f",glow:"#ff825f",coin:"#ffe08c",pit:"#1d111d",particle:"#ffb07f"},
       hazards:[
-        {type:"saw",x:520,w:50,h:39},{type:"gap",x:895,w:126},{type:"crate",x:1350,w:58,h:56},
+        {type:"saw",x:520,w:50,h:39},{type:"gap",x:895,w:126},{type:"tunnel",x:1160,w:170,h:30},
         {type:"spikes",x:1785,w:98,h:28},{type:"gap",x:2190,w:130},{type:"drone",x:2665,w:56,h:36},
         {type:"crate",x:3100,w:60,h:58},{type:"gap",x:3535,w:132},{type:"spikes",x:3970,w:106,h:29},{type:"spikes",x:2880,w:96,h:28}
       ],
@@ -218,12 +218,7 @@
     const smallBumps=Math.sin((x+offset)*0.008)*5+Math.sin((x+offset)*0.019)*2.2;
     return GROUND+shape+smallBumps;
   }
-  function getCeilingY(h) {
-    let highestGround=Infinity;
-    for(let x=h.x;x<=h.x+h.w;x+=12) highestGround=Math.min(highestGround,getGroundY(x));
-    highestGround=Math.min(highestGround,getGroundY(h.x+h.w));
-    return highestGround-64;
-  }
+
   function getGapAt(x) { return hazards.find(h=>h.type==="gap" && x>=h.x && x<=h.x+h.w); }
   function setDuck(value) {
     value=Boolean(value);
@@ -277,7 +272,15 @@
     if(h.type==="spikes") return {x:h.x+5,y:ground-h.h+6,w:h.w-10,h:h.h-6};
     if(h.type==="saw") return {x:h.x+5,y:ground-38,w:h.w-10,h:34};
     if(h.type==="drone") return {x:h.x+4,y:ground-66+Math.sin(state.time*2.1+h.phase)*8,w:h.w-8,h:30};
-    if(h.type==="beam" || h.type==="tunnel") return {x:h.x+4,y:getCeilingY(h),w:h.w-8,h:28};
+    if(h.type==="beam") return {x:h.x+5,y:getGroundY(h.x+h.w/2)-61,w:h.w-10,h:25};
+    if(h.type==="tunnel") {
+      const boxes=[];
+      for(let x=h.x;x<h.x+h.w;x+=12){
+        const w=Math.min(12,h.x+h.w-x),groundAtSegment=getGroundY(x+w/2);
+        boxes.push({x:x+1,y:groundAtSegment-62,w:Math.max(1,w-2),h:28});
+      }
+      return boxes;
+    }
     return null;
   }
   function respawn() {
@@ -349,8 +352,9 @@
     for(const h of hazards){
       if(player.x>h.x+h.w+player.w)h.passed=true;
       if(h.type==="gap")continue;
-      const r=hazardRect(h);
-      if(r && rectsOverlap(body,r)){respawn();return;}
+      const hitboxes=hazardRect(h);
+      const hit=Array.isArray(hitboxes)?hitboxes.some(r=>rectsOverlap(body,r)):Boolean(hitboxes&&rectsOverlap(body,hitboxes));
+      if(hit){respawn();return;}
     }
 
     for(const c of coins){
@@ -545,17 +549,21 @@
     ctx.beginPath();ctx.moveTo(x+8,y+26);ctx.lineTo(x+8,y+33);ctx.moveTo(x+h.w-8,y+26);ctx.lineTo(x+h.w-8,y+33);ctx.stroke();ctx.restore();
   }
   function drawTunnel(h,x){
-    const ground=getGroundY(h.x+h.w/2),y=getCeilingY(h);
-    const grad=ctx.createLinearGradient(x,y,x,y+34);
-    grad.addColorStop(0,level.theme.topline);grad.addColorStop(.45,level.theme.accent);grad.addColorStop(1,level.theme.mid);
-    ctx.save();ctx.shadowColor=level.theme.glow;ctx.shadowBlur=19;
-    rounded(x,y,h.w,30,7,grad);ctx.shadowBlur=0;
-    rounded(x+4,y+24,13,Math.max(8,ground-y-24),4,level.theme.mid);
-    rounded(x+h.w-17,y+24,13,Math.max(8,ground-y-24),4,level.theme.mid);
-    ctx.fillStyle="rgba(8,12,24,.78)";
-    for(let sx=x+24;sx<x+h.w-18;sx+=27)ctx.fillRect(sx,y+8,12,5);
-    ctx.fillStyle="#fff";ctx.globalAlpha=.9;ctx.font="800 10px Manrope,Arial";ctx.textAlign="center";ctx.fillText("DUCK  ↓",x+h.w/2,y+21);ctx.globalAlpha=1;
-    ctx.restore();
+    ctx.save();ctx.shadowColor=level.theme.glow;ctx.shadowBlur=17;
+    for(let wx=h.x;wx<h.x+h.w;wx+=12){
+      const segmentWidth=Math.min(12,h.x+h.w-wx),screenX=wx-state.camera;
+      const roofY=getGroundY(wx+segmentWidth/2)-64;
+      const grad=ctx.createLinearGradient(screenX,roofY,screenX,roofY+30);
+      grad.addColorStop(0,level.theme.topline);grad.addColorStop(.45,level.theme.accent);grad.addColorStop(1,level.theme.mid);
+      ctx.fillStyle=grad;ctx.fillRect(screenX,roofY,segmentWidth+1,30);
+      ctx.shadowBlur=0;ctx.fillStyle="rgba(8,12,24,.72)";ctx.fillRect(screenX+2,roofY+9,Math.max(2,segmentWidth-4),4);
+      ctx.shadowBlur=17;
+    }
+    const leftY=getGroundY(h.x)-64,rightY=getGroundY(h.x+h.w)-64;
+    rounded(x,leftY,10,Math.max(8,getGroundY(h.x)-leftY),4,level.theme.mid);
+    rounded(x+h.w-10,rightY,10,Math.max(8,getGroundY(h.x+h.w)-rightY),4,level.theme.mid);
+    ctx.shadowBlur=0;ctx.fillStyle="#fff";ctx.globalAlpha=.95;ctx.font="800 10px Manrope,Arial";ctx.textAlign="center";
+    ctx.fillText("DUCK  ↓",x+h.w/2,getGroundY(h.x+h.w/2)-43);ctx.globalAlpha=1;ctx.restore();
   }
   function drawHazards(){
     for(const h of hazards){
