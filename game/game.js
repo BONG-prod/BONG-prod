@@ -210,17 +210,19 @@
     return null;
   }
   function respawn() {
-    state.lives-=1; state.shake=16; addParticles(player.x+20,player.y+30,26,"#ff98a8",2.2,42,3);
+    state.lives-=1; state.shake=16;
     soundTone(145,0.28,"sawtooth",0.04);
     if(state.lives<=0) {
       state.lives=3; state.score=Math.floor(state.score*0.72);
       loadLevel(state.index,false);
+      addParticles(player.x+20,GROUND-4,26,"#ff98a8",2.2,42,3);
       notify("RUN RESET","THREE NEW LIVES. TAKE ANOTHER SHOT.",1450);
     } else {
       player.x=140; player.y=GROUND-player.h; player.vy=0; player.grounded=true; player.run=0; player.trail=[];
       state.camera=0; particles=[];
       hazards.forEach(h=>h.passed=false);
       coins=makeCoins(level.coinGroups);
+      addParticles(player.x+20,GROUND-4,26,"#ff98a8",2.2,42,3);
       notify("OOPS!","THE BOT IS BACK ON TRACK · "+state.lives+" LIVES LEFT",1050);
     }
     updateUI();
@@ -229,9 +231,9 @@
     state.score+=600+state.lives*125+Math.max(0,Math.floor((level.length-player.x)*0.18));
     updateBest(); state.maxUnlocked=Math.max(state.maxUnlocked,Math.min(worlds.length-1,state.index+1));
     try { localStorage.setItem("bongRunnerUnlocked",String(state.maxUnlocked)); } catch (_) {}
-    addParticles(W-120,GROUND-80,55,level.theme.glow,2.6,70,4);
+    addParticles(player.x+W*.78,GROUND-80,55,level.theme.glow,2.6,70,4);
     soundTone(720,0.24,"sine",0.04); state.transition=115;
-    notify("WORLD CLEARED!",""+level.name.toUpperCase()+" · NEXT WORLD LOADING",1150);
+    notify("WORLD CLEARED!",""+level.name.toUpperCase()+" · NEXT WORLD LOADING",1900);
     updateUI();
   }
 
