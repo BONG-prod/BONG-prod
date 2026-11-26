@@ -32,8 +32,8 @@
       <section class="hero">
         <div class="eyebrow"><span class="eyebrow-line"></span> AN EXPERIMENT IN AUTONOMOUS FUN <span class="eyebrow-line"></span></div>
         <h1>BONG <span>RUNNER</span><sup>ARCADE</sup></h1>
-        <p class="subtitle">A tiny robot. A very long way home. Watch the autopilot master six handcrafted worlds — or grab the controls and make your own run.</p>
-        <div class="hero-tags"><span>✦ 6 WORLDS</span><span>◈ SMART AUTOPILOT</span><span>⌁ ENDLESS RUNS</span></div>
+        <p class="subtitle">A tiny robot. A very long way home. Watch the autopilot master ten handcrafted worlds — or grab the controls and make your own run.</p>
+        <div class="hero-tags"><span>✦ 10 WORLDS</span><span>◈ SMART AUTOPILOT</span><span>⌁ ENDLESS RUNS</span></div>
       </section>
 
       <section class="game-panel" aria-label="BONG Runner game">
@@ -54,7 +54,7 @@
           <canvas id="game" width="1100" height="560" aria-label="BONG Runner platform adventure"></canvas>
           <div class="canvas-vignette"></div>
           <div class="hud-chip hud-left"><span class="pulse-dot"></span><span id="modeLabel">AUTOPILOT ACTIVE</span></div>
-          <div class="hud-chip hud-right"><span>STAGE</span><strong id="stageCounter">01 / 06</strong></div>
+          <div class="hud-chip hud-right"><span>STAGE</span><strong id="stageCounter">01 / 10</strong></div>
           <div class="canvas-message" id="canvasMessage"><span class="message-kicker">BONG-PROD ARCADE</span><strong>READY TO RUN?</strong><small>THE AUTOPILOT IS WARMING UP</small></div>
         </div>
 
@@ -67,11 +67,12 @@
           <div class="control-actions">
             <button id="autoBtn" class="control-button primary" type="button" aria-pressed="true"><span class="button-status"></span><span id="autoText">Autopilot ON</span></button>
             <button id="jumpBtn" class="control-button jump-button" type="button"><span class="control-icon">↑</span> Jump</button>
+            <button id="duckBtn" class="control-button duck-button" type="button"><span class="control-icon">↓</span> Duck</button>
             <button id="pauseBtn" class="control-button" type="button"><span class="control-icon">Ⅱ</span> Pause</button>
             <button id="restartBtn" class="control-button" type="button"><span class="control-icon">↻</span> Restart</button>
             <button id="soundBtn" class="control-button sound-button" type="button" aria-pressed="false"><span class="control-icon">♫</span><span id="soundText">Sound off</span></button>
           </div>
-          <div class="keyboard-hint"><kbd>SPACE</kbd><kbd>↑</kbd><span>JUMP</span><i>·</i><kbd>P</kbd><span>PAUSE</span></div>
+          <div class="keyboard-hint"><kbd>SPACE</kbd><kbd>↑</kbd><span>JUMP</span><i>·</i><kbd>S</kbd><kbd>↓</kbd><span>DUCK</span><i>·</i><kbd>P</kbd><span>PAUSE</span></div>
         </div>
       </section>
 
@@ -84,21 +85,25 @@
           <button class="world-card" type="button" data-level="3"><span class="world-number">WORLD 04</span><span class="world-symbol">♨</span><strong>Ember Foundry</strong><small>Hot metal & sparks</small><i class="world-card-line"></i></button>
           <button class="world-card" type="button" data-level="4"><span class="world-number">WORLD 05</span><span class="world-symbol">❄</span><strong>Frostbyte Peaks</strong><small>Frozen frontier</small><i class="world-card-line"></i></button>
           <button class="world-card" type="button" data-level="5"><span class="world-number">WORLD 06</span><span class="world-symbol">✧</span><strong>Orbit Core</strong><small>Beyond the stars</small><i class="world-card-line"></i></button>
+          <button class="world-card" type="button" data-level="6"><span class="world-number">WORLD 07</span><span class="world-symbol">☁</span><strong>Skyrail Heights</strong><small>Above the cloudline</small><i class="world-card-line"></i></button>
+          <button class="world-card" type="button" data-level="7"><span class="world-number">WORLD 08</span><span class="world-symbol">❧</span><strong>Verdant Circuit</strong><small>The overgrown network</small><i class="world-card-line"></i></button>
+          <button class="world-card" type="button" data-level="8"><span class="world-number">WORLD 09</span><span class="world-symbol">♨</span><strong>Magma Frontier</strong><small>The furnace below</small><i class="world-card-line"></i></button>
+          <button class="world-card" type="button" data-level="9"><span class="world-number">WORLD 10</span><span class="world-symbol">✧</span><strong>Quantum Citadel</strong><small>The final frontier</small><i class="world-card-line"></i></button>
         </div>
       </section>
 
       <section class="details-grid">
         <article class="detail-card">
           <div class="detail-icon">⌁</div><span class="section-kicker">AUTONOMOUS MODE</span><h3>Let the bot cook.</h3>
-          <p>The runner reads the road ahead, estimates jump distance and avoids gaps, crates, spikes and sentry drones. Autopilot starts enabled.</p>
+          <p>The runner reads the road ahead, jumps over hazards and ducks under overhead beams. Autopilot starts enabled.</p>
         </article>
         <article class="detail-card">
           <div class="detail-icon">↗</div><span class="section-kicker">MANUAL CONTROL</span><h3>Your run, your rules.</h3>
-          <p>Switch autopilot off and jump with Space, ↑, W or the Jump button. Pause, restart or jump into any world at any time.</p>
+          <p>Jump with Space / ↑ / W and hold S / ↓ to duck under beams. Pause, restart or jump into any world at any time.</p>
         </article>
         <article class="detail-card">
           <div class="detail-icon">◈</div><span class="section-kicker">COLLECT & COMPLETE</span><h3>Chase the high score.</h3>
-          <p>Collect energy orbs, keep your lives, clear all six worlds and beat your personal best. Your best score stays on this device.</p>
+          <p>Collect energy orbs, keep your lives, clear all ten worlds and beat your personal best. Your best score stays on this device.</p>
         </article>
       </section>
     </main>
