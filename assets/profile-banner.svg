@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-labelledby="title desc">
+  <title id="title">BONG-prod — Software and automation</title>
+  <desc id="desc">A premium dark gradient banner with blue-violet accents.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0A0F18"/>
+      <stop offset="0.56" stop-color="#11192A"/>
+      <stop offset="1" stop-color="#1B1530"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6D8BFF"/>
+      <stop offset="0.52" stop-color="#7482F6"/>
+      <stop offset="1" stop-color="#B18BFF"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#536DEB" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#536DEB" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#9A66EA" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#9A66EA" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0V36" fill="none" stroke="#AAB8FF" stroke-opacity="0.055" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1280" height="360" rx="28" fill="url(#bg)"/>
+  <rect width="1280" height="360" rx="28" fill="url(#grid)"/>
+  <ellipse cx="940" cy="115" rx="365" ry="245" fill="url(#glowA)"/>
+  <ellipse cx="1120" cy="315" rx="330" ry="220" fill="url(#glowB)"/>
+  <path d="M0 294C235 240 360 340 585 285S1000 208 1280 255" fill="none" stroke="url(#accent)" stroke-opacity="0.22" stroke-width="1.5"/>
+  <path d="M0 314C250 262 390 354 620 303S1000 234 1280 278" fill="none" stroke="#AFC0FF" stroke-opacity="0.08" stroke-width="1"/>
+  <g transform="translate(900 78)" fill="none" stroke="url(#accent)" stroke-width="2">
+    <circle cx="116" cy="82" r="66" stroke-opacity="0.23"/>
+    <circle cx="116" cy="82" r="44" stroke-opacity="0.32"/>
+    <path d="M116 16V148M50 82H182M69 35L163 129M163 35L69 129" stroke-opacity="0.22"/>
+    <circle cx="116" cy="16" r="5" fill="#8EA0FF" stroke="none"/>
+    <circle cx="182" cy="82" r="5" fill="#B18BFF" stroke="none"/>
+    <circle cx="116" cy="148" r="5" fill="#8EA0FF" stroke="none"/>
+    <circle cx="50" cy="82" r="5" fill="#B18BFF" stroke="none"/>
+    <circle cx="116" cy="82" r="10" fill="#A9B4FF" fill-opacity="0.9" stroke="none"/>
+  </g>
+  <g transform="translate(78 82)">
+    <text x="0" y="0" fill="#AEBBFF" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="4">INDEPENDENT DEVELOPER</text>
+    <text x="-2" y="95" fill="#F4F6FF" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="76" font-weight="750" letter-spacing="-2">BONG-prod</text>
+    <rect x="2" y="119" width="250" height="5" rx="2.5" fill="url(#accent)"/>
+    <text x="0" y="170" fill="#D0D7EA" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="21" font-weight="500">SOFTWARE  •  WINDOWS  •  AUTOMATION</text>
+    <text x="0" y="211" fill="#8F9AB5" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="16">Building practical tools, desktop apps and web projects.</text>
+  </g>
+  <rect x="1" y="1" width="1278" height="358" rx="27" fill="none" stroke="#AEBBFF" stroke-opacity="0.14"/>
+</svg>
