@@ -590,7 +590,8 @@
   document.addEventListener("visibilitychange",()=>{if(document.hidden&&!state.paused){state.paused=true;updateUI();}});
   $("autoBtn").addEventListener("click",()=>setAutopilot(!state.auto));
   $("pauseBtn").addEventListener("click",togglePause);
-  $("restartBtn").addEventListener("click",restart);\n  $("jumpBtn").addEventListener("click",()=>{if(state.auto)setAutopilot(false);triggerJump();});
+  $("restartBtn").addEventListener("click",restart);
+  $("jumpBtn").addEventListener("click",()=>{if(state.auto)setAutopilot(false);triggerJump();});
   $("soundBtn").addEventListener("click",toggleSound);
   document.querySelectorAll(".world-card").forEach((button)=>button.addEventListener("click",()=>chooseLevel(Number(button.dataset.level))));
   canvas.addEventListener("pointerdown",()=>{if(!state.auto)triggerJump();});
