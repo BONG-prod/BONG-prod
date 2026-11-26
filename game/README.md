@@ -5,7 +5,7 @@ An original browser platformer built with Canvas, HTML, CSS and JavaScript.
 ## Features
 
 - Autopilot is enabled by default and times jumps around gaps, crates and spikes.
-- Four handcrafted stages that loop into another run after completion.
+- Six handcrafted worlds that loop into another run after completion.
 - Collectible energy coins, score counter and stage progress.
 - Manual jump control with Space, Arrow Up, W or a tap/click on the game canvas.
 - Pause with P; restart with the Restart run button.
