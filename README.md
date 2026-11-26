@@ -64,6 +64,16 @@
   <img src="https://img.shields.io/badge/MongoDB-111827?style=for-the-badge&logo=mongodb&logoColor=47A248" alt="MongoDB" />
 </div>
 
+## 🐍 Contribution snake
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/BONG-prod/BONG-prod/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/BONG-prod/BONG-prod/output/github-contribution-grid-snake.svg" />
+  <img alt="Animated GitHub contribution snake" src="https://raw.githubusercontent.com/BONG-prod/BONG-prod/output/github-contribution-grid-snake.svg" width="100%" />
+</picture>
+
+<sub>Автоматически обновляется каждый день через GitHub Actions.</sub>
+
 ## 🎯 Сейчас в фокусе
 
 - Развитие инструментов и приложений для Windows.
