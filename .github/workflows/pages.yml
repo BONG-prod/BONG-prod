@@ -28,6 +28,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Validate game JavaScript
+        run: node --check game.js
+        working-directory: game
+
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
         with:
