@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0a0f18" />
+  <meta name="description" content="BONG RUNNER — tiny auto-playing platformer by BONG-prod." />
+  <title>BONG RUNNER — BONG-prod</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="game.js" defer></script>
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <a class="brand" href="https://github.com/BONG-prod" target="_blank" rel="noreferrer">
+        <span class="brand-mark">B</span>
+        <span><strong>BONG-prod</strong><small>ARCADE EXPERIMENTS</small></span>
+      </a>
+      <a class="back-link" href="https://github.com/BONG-prod">← Back to GitHub</a>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="eyebrow"><span class="live-dot"></span> A LITTLE GAME, RUNNING ON ITS OWN</div>
+        <h1>BONG <span>RUNNER</span></h1>
+        <p class="subtitle">A tiny platform adventure. The bot runs, jumps, collects and clears the levels — you can take control whenever you like.</p>
+      </section>
+
+      <section class="game-card" aria-label="BONG Runner game">
+        <div class="game-toolbar">
+          <div class="level-meta"><span class="meta-label">CURRENT STAGE</span><strong id="levelName">01 / Neon Outskirts</strong></div>
+          <div class="stats">
+            <div><span class="meta-label">SCORE</span><strong id="score">000000</strong></div>
+            <div><span class="meta-label">COINS</span><strong id="coins">00</strong></div>
+            <div><span class="meta-label">RUNS</span><strong id="runs">01</strong></div>
+          </div>
+        </div>
+        <div class="canvas-wrap">
+          <canvas id="game" width="960" height="520" aria-label="Autoplay platform game"></canvas>
+          <div id="toast" class="toast" role="status">AUTOPILOT ONLINE</div>
+        </div>
+        <div class="progress-row"><span>LEVEL PROGRESS</span><div class="progress-track"><i id="progress"></i></div><strong id="progressText">0%</strong></div>
+        <div class="game-controls">
+          <div class="control-group">
+            <button id="autoBtn" class="button primary" type="button" aria-pressed="true"><span class="button-dot"></span> Autopilot ON</button>
+            <button id="restartBtn" class="button" type="button">↻ Restart run</button>
+          </div>
+          <div class="hint"><kbd>SPACE</kbd> / <kbd>↑</kbd> jump <span>·</span> <kbd>P</kbd> pause</div>
+        </div>
+      </section>
+
+      <section class="below-grid">
+        <article class="info-card">
+          <span class="card-index">01 / THE MISSION</span>
+          <h2>Run. Jump. Repeat.</h2>
+          <p>Four handcrafted stages, scattered energy coins, tricky gaps and obstacle timing. The runner uses a simple onboard autopilot to spot hazards and time its jumps.</p>
+        </article>
+        <article class="info-card">
+          <span class="card-index">02 / YOUR MOVE</span>
+          <h2>Take the controls</h2>
+          <p>Turn the autopilot off and press Space, Arrow Up or tap the game to jump. Turn it back on whenever you want the bot to take over.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer><span>BUILT FOR FUN BY <a href="https://github.com/BONG-prod">BONG-prod</a></span><span>NO DOWNLOADS · JUST PLAY</span></footer>
+  </div>
+</body>
+</html>
