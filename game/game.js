@@ -151,6 +151,7 @@
     document.querySelectorAll(".world-card").forEach((button)=>{
       const active=Number(button.dataset.level)===state.index;
       button.classList.toggle("active",active);
+      button.classList.toggle("cleared",Number(button.dataset.level)<state.maxUnlocked);
       button.setAttribute("aria-pressed",String(active));
     });
   }
@@ -262,6 +263,8 @@
 
     player.run+=dt*(player.grounded?0.23:0.075);
     player.blink+=dt;
+    const trailTick=Math.floor(state.time*24);
+    if(trailTick!==state.lastTrailTick){state.lastTrailTick=trailTick;player.trail.push({x:player.x-5,y:player.y+8});if(player.trail.length>7)player.trail.shift();}
     if(player.y>H+110){respawn();return;}
 
     const body={x:player.x+5,y:player.y+5,w:player.w-10,h:player.h-7};
