@@ -32,7 +32,7 @@
       hazards:[
         {type:"crate",x:570,w:54,h:52},{type:"gap",x:1010,w:116},{type:"spikes",x:1480,w:90,h:27},
         {type:"saw",x:1925,w:48,h:38},{type:"crate",x:2390,w:58,h:55},{type:"gap",x:2815,w:124},
-        {type:"drone",x:3280,w:54,h:34},{type:"spikes",x:3605,w:96,h:27},{type:"beam",x:790,w:96,h:26},{type:"crate",x:1275,w:56,h:52},{type:"beam",x:2140,w:102,h:26},{type:"spikes",x:2600,w:94,h:27}
+        {type:"drone",x:3280,w:54,h:34},{type:"spikes",x:3605,w:96,h:27},{type:"beam",x:700,w:96,h:26},{type:"crate",x:1275,w:56,h:52},{type:"beam",x:2140,w:102,h:26},{type:"spikes",x:2600,w:94,h:27}
       ],
       coinGroups:[{x:325,y:397,count:5,step:42},{x:545,y:300,count:4,step:43,arc:42},{x:850,y:325,count:5,step:42,arc:23},{x:1300,y:395,count:4,step:43},{x:1455,y:306,count:5,step:41,arc:40},{x:1830,y:325,count:4,step:43,arc:24},{x:2250,y:395,count:5,step:42},{x:2370,y:290,count:4,step:43,arc:39},{x:2670,y:320,count:5,step:42,arc:22},{x:3100,y:395,count:4,step:42},{x:3500,y:305,count:5,step:42,arc:38}]
     },
@@ -42,7 +42,7 @@
       hazards:[
         {type:"spikes",x:530,w:84,h:28},{type:"gap",x:930,w:120},{type:"drone",x:1370,w:54,h:34},
         {type:"crate",x:1810,w:58,h:55},{type:"gap",x:2240,w:126},{type:"saw",x:2705,w:48,h:38},
-        {type:"spikes",x:3100,w:100,h:29},{type:"gap",x:3515,w:122},{type:"beam",x:760,w:100,h:26},{type:"crate",x:1590,w:58,h:55},{type:"beam",x:2030,w:104,h:26},{type:"saw",x:2900,w:48,h:38},{type:"beam",x:3300,w:100,h:26}
+        {type:"spikes",x:3100,w:100,h:29},{type:"gap",x:3515,w:122},{type:"crate",x:1590,w:58,h:55}
       ],
       coinGroups:[{x:290,y:395,count:5,step:43},{x:495,y:302,count:5,step:42,arc:38},{x:790,y:333,count:5,step:42,arc:22},{x:1240,y:395,count:4,step:43},{x:1350,y:292,count:5,step:42,arc:46},{x:1660,y:330,count:5,step:43,arc:20},{x:2070,y:395,count:4,step:43},{x:2210,y:300,count:5,step:42,arc:39},{x:2540,y:330,count:5,step:42,arc:24},{x:2920,y:395,count:4,step:43},{x:3070,y:300,count:5,step:42,arc:38},{x:3410,y:335,count:5,step:42,arc:21},{x:3750,y:395,count:4,step:43}]
     },
@@ -52,7 +52,7 @@
       hazards:[
         {type:"crate",x:560,w:56,h:52},{type:"saw",x:960,w:48,h:38},{type:"gap",x:1330,w:122},
         {type:"drone",x:1790,w:54,h:34},{type:"spikes",x:2220,w:104,h:28},{type:"gap",x:2655,w:130},
-        {type:"crate",x:3090,w:58,h:56},{type:"saw",x:3500,w:48,h:38},{type:"gap",x:3860,w:125},{type:"beam",x:760,w:98,h:26},{type:"crate",x:1120,w:56,h:53},{type:"spikes",x:2020,w:92,h:28},{type:"beam",x:2880,w:104,h:26},{type:"drone",x:3670,w:56,h:36}
+        {type:"crate",x:3090,w:58,h:56},{type:"saw",x:3500,w:48,h:38},{type:"gap",x:3860,w:125},{type:"beam",x:2370,w:104,h:26}
       ],
       coinGroups:[{x:305,y:395,count:5,step:43},{x:530,y:300,count:5,step:42,arc:42},{x:830,y:320,count:5,step:42,arc:25},{x:1210,y:395,count:4,step:43},{x:1300,y:294,count:5,step:42,arc:42},{x:1640,y:325,count:5,step:42,arc:22},{x:2040,y:395,count:4,step:43},{x:2200,y:305,count:5,step:42,arc:39},{x:2500,y:326,count:5,step:42,arc:21},{x:2950,y:395,count:4,step:43},{x:3070,y:300,count:5,step:42,arc:42},{x:3400,y:325,count:5,step:42,arc:22},{x:3740,y:395,count:4,step:43}]
     },
@@ -62,7 +62,7 @@
       hazards:[
         {type:"saw",x:520,w:50,h:39},{type:"gap",x:895,w:126},{type:"crate",x:1350,w:58,h:56},
         {type:"spikes",x:1785,w:98,h:28},{type:"gap",x:2190,w:130},{type:"drone",x:2665,w:56,h:36},
-        {type:"crate",x:3100,w:60,h:58},{type:"gap",x:3535,w:132},{type:"spikes",x:3970,w:106,h:29},{type:"beam",x:710,w:100,h:26},{type:"beam",x:1580,w:106,h:26},{type:"saw",x:1980,w:50,h:39},{type:"spikes",x:2880,w:96,h:28},{type:"beam",x:3300,w:104,h:26}
+        {type:"crate",x:3100,w:60,h:58},{type:"gap",x:3535,w:132},{type:"spikes",x:3970,w:106,h:29},{type:"spikes",x:2880,w:96,h:28}
       ],
       coinGroups:[{x:280,y:395,count:5,step:43},{x:490,y:303,count:5,step:42,arc:42},{x:785,y:325,count:5,step:42,arc:24},{x:1230,y:395,count:4,step:43},{x:1330,y:294,count:5,step:42,arc:40},{x:1640,y:325,count:5,step:42,arc:22},{x:2050,y:395,count:4,step:43},{x:2170,y:299,count:5,step:42,arc:40},{x:2500,y:325,count:5,step:42,arc:21},{x:2940,y:395,count:4,step:43},{x:3070,y:294,count:5,step:42,arc:41},{x:3400,y:325,count:5,step:42,arc:22},{x:3840,y:395,count:4,step:43}]
     },
@@ -72,7 +72,7 @@
       hazards:[
         {type:"crate",x:540,w:58,h:54},{type:"gap",x:980,w:126},{type:"saw",x:1440,w:50,h:39},
         {type:"spikes",x:1880,w:102,h:28},{type:"gap",x:2300,w:132},{type:"drone",x:2780,w:56,h:36},
-        {type:"crate",x:3215,w:62,h:58},{type:"spikes",x:3650,w:108,h:29},{type:"gap",x:4055,w:128},{type:"beam",x:760,w:102,h:26},{type:"beam",x:1660,w:106,h:26},{type:"crate",x:2110,w:60,h:56},{type:"spikes",x:3000,w:102,h:28},{type:"beam",x:3850,w:104,h:26}
+        {type:"crate",x:3215,w:62,h:58},{type:"spikes",x:3650,w:108,h:29},{type:"gap",x:4055,w:128},{type:"beam",x:3390,w:104,h:26}
       ],
       coinGroups:[{x:295,y:395,count:5,step:43},{x:510,y:300,count:5,step:42,arc:42},{x:870,y:325,count:5,step:42,arc:22},{x:1290,y:395,count:4,step:43},{x:1420,y:295,count:5,step:42,arc:41},{x:1740,y:326,count:5,step:42,arc:22},{x:2150,y:395,count:4,step:43},{x:2290,y:300,count:5,step:42,arc:40},{x:2600,y:325,count:5,step:42,arc:22},{x:3030,y:395,count:4,step:43},{x:3190,y:295,count:5,step:42,arc:40},{x:3490,y:326,count:5,step:42,arc:22},{x:3890,y:395,count:4,step:43},{x:4150,y:325,count:4,step:42}]
     },
@@ -82,7 +82,7 @@
       hazards:[
         {type:"drone",x:530,w:56,h:36},{type:"gap",x:960,w:130},{type:"crate",x:1425,w:60,h:58},
         {type:"saw",x:1880,w:50,h:39},{type:"gap",x:2300,w:132},{type:"spikes",x:2765,w:110,h:29},
-        {type:"drone",x:3200,w:58,h:36},{type:"gap",x:3640,w:136},{type:"crate",x:4100,w:62,h:58},{type:"beam",x:730,w:104,h:26},{type:"spikes",x:1690,w:98,h:28},{type:"beam",x:2520,w:108,h:26},{type:"crate",x:3440,w:60,h:56}
+        {type:"drone",x:3200,w:58,h:36},{type:"gap",x:3640,w:136},{type:"crate",x:4100,w:62,h:58},{type:"beam",x:2520,w:108,h:26},{type:"spikes",x:3850,w:100,h:28},{type:"beam",x:4370,w:104,h:26}
       ],
       coinGroups:[{x:280,y:395,count:5,step:43},{x:500,y:294,count:5,step:42,arc:42},{x:850,y:325,count:5,step:42,arc:22},{x:1270,y:395,count:4,step:43},{x:1400,y:295,count:5,step:42,arc:42},{x:1730,y:325,count:5,step:42,arc:22},{x:2150,y:395,count:4,step:43},{x:2290,y:298,count:5,step:42,arc:40},{x:2610,y:325,count:5,step:42,arc:22},{x:3020,y:395,count:4,step:43},{x:3180,y:293,count:5,step:42,arc:42},{x:3500,y:325,count:5,step:42,arc:22},{x:3950,y:395,count:4,step:43},{x:4250,y:300,count:5,step:42,arc:38}]
     }
@@ -240,7 +240,7 @@
       return;
     }
     setDuck(false);
-    const lead=h.type==="gap"?138:116;
+    const lead=h.type==="gap"?Math.max(70,Math.min(125,level.speed*52-h.w-20)):116;
     if(next.distance<=lead && next.distance>-12) triggerJump();
   }
   function rectsOverlap(a,b) {
