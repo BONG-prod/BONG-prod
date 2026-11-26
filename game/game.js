@@ -27,12 +27,18 @@
 
   const worlds = [
     {
-      name:"Neon Outskirts", subtitle:"Twilight fields", icon:"✦", scene:"meadow", length:3900, speed:4.45,
+      name:"Neon Outskirts", subtitle:"Twilight fields", icon:"✦", scene:"meadow", length:5000, speed:4.35,
       theme:{top:"#18294c",bottom:"#586286",far:"#435078",mid:"#2b4162",ground:"#263e4c",topline:"#8ca7d7",accent:"#8ca6ff",glow:"#a6a4ff",coin:"#ffd878",pit:"#141d36",particle:"#b9c8ff"},
       hazards:[
-        {type:"crate",x:570,w:54,h:52},{type:"gap",x:1010,w:116},{type:"spikes",x:1480,w:90,h:27},
-        {type:"saw",x:1925,w:48,h:38},{type:"crate",x:2390,w:58,h:55},{type:"gap",x:2815,w:124},
-        {type:"drone",x:3280,w:54,h:34},{type:"spikes",x:3605,w:96,h:27},{type:"tunnel",x:700,w:190,h:30},{type:"crate",x:1275,w:56,h:52},{type:"tunnel",x:1645,w:190,h:30},{type:"tunnel",x:2140,w:190,h:30},{type:"spikes",x:2600,w:94,h:27}
+        {type:"crate",x:600,w:52,h:44},
+        {type:"tunnel",x:1030,w:180,h:30},
+        {type:"gap",x:1600,w:100},
+        {type:"spikes",x:2090,w:84,h:22},
+        {type:"saw",x:2560,w:44,h:32},
+        {type:"tunnel",x:3010,w:190,h:30},
+        {type:"spikes",x:3610,w:48,h:22},
+        {type:"crate",x:4080,w:54,h:44},
+        {type:"gap",x:4540,w:105}
       ],
       coinGroups:[{x:325,y:397,count:5,step:42},{x:545,y:300,count:4,step:43,arc:42},{x:850,y:325,count:5,step:42,arc:23},{x:1300,y:395,count:4,step:43},{x:1455,y:306,count:5,step:41,arc:40},{x:1830,y:325,count:4,step:43,arc:24},{x:2250,y:395,count:5,step:42},{x:2370,y:290,count:4,step:43,arc:39},{x:2670,y:320,count:5,step:42,arc:22},{x:3100,y:395,count:4,step:42},{x:3500,y:305,count:5,step:42,arc:38}]
     },
@@ -40,9 +46,13 @@
       name:"Crystal Caves", subtitle:"Deep blue caverns", icon:"◇", scene:"cave", length:4050, speed:4.65,
       theme:{top:"#101d3d",bottom:"#314b76",far:"#243a64",mid:"#1a3151",ground:"#1d3448",topline:"#78c7e5",accent:"#74d8ff",glow:"#74bfff",coin:"#8df1ed",pit:"#09172d",particle:"#9ce7ff"},
       hazards:[
-        {type:"spikes",x:530,w:84,h:28},{type:"gap",x:930,w:120},{type:"drone",x:1370,w:54,h:34},
-        {type:"crate",x:1810,w:58,h:55},{type:"gap",x:2240,w:126},{type:"saw",x:2705,w:48,h:38},
-        {type:"spikes",x:3100,w:100,h:29},{type:"gap",x:3515,w:122},{type:"tunnel",x:1960,w:190,h:30},{type:"crate",x:1590,w:58,h:55}
+        {type:"spikes",x:530,w:84,h:22},
+        {type:"gap",x:950,w:100},
+        {type:"drone",x:1370,w:50,h:32},
+        {type:"tunnel",x:1800,w:180,h:30},
+        {type:"gap",x:2300,w:105},
+        {type:"crate",x:2780,w:54,h:46},
+        {type:"saw",x:3240,w:44,h:32}
       ],
       coinGroups:[{x:290,y:395,count:5,step:43},{x:495,y:302,count:5,step:42,arc:38},{x:790,y:333,count:5,step:42,arc:22},{x:1240,y:395,count:4,step:43},{x:1350,y:292,count:5,step:42,arc:46},{x:1660,y:330,count:5,step:43,arc:20},{x:2070,y:395,count:4,step:43},{x:2210,y:300,count:5,step:42,arc:39},{x:2540,y:330,count:5,step:42,arc:24},{x:2920,y:395,count:4,step:43},{x:3070,y:300,count:5,step:42,arc:38},{x:3410,y:335,count:5,step:42,arc:21},{x:3750,y:395,count:4,step:43}]
     },
@@ -50,9 +60,15 @@
       name:"Neon District", subtitle:"After-dark city", icon:"▦", scene:"city", length:4200, speed:4.8,
       theme:{top:"#100f2c",bottom:"#44396c",far:"#29244f",mid:"#211f43",ground:"#25233f",topline:"#c58cff",accent:"#d18cff",glow:"#9a78ff",coin:"#ffe08a",pit:"#0d0d28",particle:"#d6a5ff"},
       hazards:[
-        {type:"crate",x:560,w:56,h:52},{type:"saw",x:960,w:48,h:38},{type:"gap",x:1330,w:122},
-        {type:"drone",x:1790,w:54,h:34},{type:"spikes",x:2220,w:104,h:28},{type:"gap",x:2655,w:130},
-        {type:"crate",x:3090,w:58,h:56},{type:"saw",x:3500,w:48,h:38},{type:"gap",x:3860,w:125},{type:"tunnel",x:2370,w:200,h:30}
+        {type:"crate",x:560,w:52,h:44},
+        {type:"saw",x:960,w:44,h:32},
+        {type:"gap",x:1360,w:105},
+        {type:"drone",x:1780,w:50,h:32},
+        {type:"tunnel",x:2230,w:170,h:30},
+        {type:"spikes",x:2700,w:84,h:22},
+        {type:"crate",x:3140,w:54,h:46},
+        {type:"gap",x:3560,w:105},
+        {type:"spikes",x:3970,w:82,h:22}
       ],
       coinGroups:[{x:305,y:395,count:5,step:43},{x:530,y:300,count:5,step:42,arc:42},{x:830,y:320,count:5,step:42,arc:25},{x:1210,y:395,count:4,step:43},{x:1300,y:294,count:5,step:42,arc:42},{x:1640,y:325,count:5,step:42,arc:22},{x:2040,y:395,count:4,step:43},{x:2200,y:305,count:5,step:42,arc:39},{x:2500,y:326,count:5,step:42,arc:21},{x:2950,y:395,count:4,step:43},{x:3070,y:300,count:5,step:42,arc:42},{x:3400,y:325,count:5,step:42,arc:22},{x:3740,y:395,count:4,step:43}]
     },
@@ -60,9 +76,15 @@
       name:"Ember Foundry", subtitle:"Hot metal & sparks", icon:"♨", scene:"foundry", length:4300, speed:4.95,
       theme:{top:"#281728",bottom:"#6e3c45",far:"#5c3546",mid:"#422b3d",ground:"#382a35",topline:"#f4a06f",accent:"#ff986f",glow:"#ff825f",coin:"#ffe08c",pit:"#1d111d",particle:"#ffb07f"},
       hazards:[
-        {type:"saw",x:520,w:50,h:39},{type:"gap",x:895,w:126},{type:"tunnel",x:1160,w:170,h:30},
-        {type:"spikes",x:1785,w:98,h:28},{type:"gap",x:2190,w:130},{type:"drone",x:2665,w:56,h:36},
-        {type:"crate",x:3100,w:60,h:58},{type:"gap",x:3535,w:132},{type:"spikes",x:3970,w:106,h:29},{type:"spikes",x:2880,w:96,h:28}
+        {type:"saw",x:520,w:44,h:32},
+        {type:"gap",x:940,w:105},
+        {type:"tunnel",x:1360,w:170,h:30},
+        {type:"spikes",x:1800,w:84,h:22},
+        {type:"gap",x:2220,w:110},
+        {type:"drone",x:2660,w:50,h:32},
+        {type:"crate",x:3100,w:54,h:46},
+        {type:"gap",x:3530,w:108},
+        {type:"spikes",x:3970,w:88,h:22}
       ],
       coinGroups:[{x:280,y:395,count:5,step:43},{x:490,y:303,count:5,step:42,arc:42},{x:785,y:325,count:5,step:42,arc:24},{x:1230,y:395,count:4,step:43},{x:1330,y:294,count:5,step:42,arc:40},{x:1640,y:325,count:5,step:42,arc:22},{x:2050,y:395,count:4,step:43},{x:2170,y:299,count:5,step:42,arc:40},{x:2500,y:325,count:5,step:42,arc:21},{x:2940,y:395,count:4,step:43},{x:3070,y:294,count:5,step:42,arc:41},{x:3400,y:325,count:5,step:42,arc:22},{x:3840,y:395,count:4,step:43}]
     },
@@ -70,9 +92,15 @@
       name:"Frostbyte Peaks", subtitle:"Frozen frontier", icon:"❄", scene:"ice", length:4420, speed:5.05,
       theme:{top:"#152b46",bottom:"#7095aa",far:"#52768e",mid:"#3d637e",ground:"#345164",topline:"#b2eafa",accent:"#9ae8ff",glow:"#b5f2ff",coin:"#ffe89c",pit:"#132b44",particle:"#d5f7ff"},
       hazards:[
-        {type:"crate",x:540,w:58,h:54},{type:"gap",x:980,w:126},{type:"saw",x:1440,w:50,h:39},
-        {type:"spikes",x:1880,w:102,h:28},{type:"gap",x:2300,w:132},{type:"drone",x:2780,w:56,h:36},
-        {type:"crate",x:3215,w:62,h:58},{type:"spikes",x:3650,w:108,h:29},{type:"gap",x:4055,w:128},{type:"tunnel",x:1600,w:190,h:30},{type:"tunnel",x:3390,w:190,h:30}
+        {type:"crate",x:540,w:54,h:46},
+        {type:"gap",x:980,w:105},
+        {type:"saw",x:1440,w:44,h:32},
+        {type:"tunnel",x:1900,w:180,h:30},
+        {type:"spikes",x:2350,w:84,h:22},
+        {type:"gap",x:2780,w:110},
+        {type:"drone",x:3240,w:50,h:32},
+        {type:"crate",x:3700,w:54,h:46},
+        {type:"gap",x:4140,w:108}
       ],
       coinGroups:[{x:295,y:395,count:5,step:43},{x:510,y:300,count:5,step:42,arc:42},{x:870,y:325,count:5,step:42,arc:22},{x:1290,y:395,count:4,step:43},{x:1420,y:295,count:5,step:42,arc:41},{x:1740,y:326,count:5,step:42,arc:22},{x:2150,y:395,count:4,step:43},{x:2290,y:300,count:5,step:42,arc:40},{x:2600,y:325,count:5,step:42,arc:22},{x:3030,y:395,count:4,step:43},{x:3190,y:295,count:5,step:42,arc:40},{x:3490,y:326,count:5,step:42,arc:22},{x:3890,y:395,count:4,step:43},{x:4150,y:325,count:4,step:42}]
     },
@@ -80,9 +108,15 @@
       name:"Orbit Core", subtitle:"Beyond the stars", icon:"✧", scene:"space", length:4650, speed:5.2,
       theme:{top:"#090f2a",bottom:"#2c2c61",far:"#25275a",mid:"#1b2048",ground:"#202544",topline:"#9ca6ff",accent:"#a99bff",glow:"#a58bff",coin:"#ffe28b",pit:"#080d22",particle:"#c3b8ff"},
       hazards:[
-        {type:"drone",x:530,w:56,h:36},{type:"gap",x:960,w:130},{type:"crate",x:1425,w:60,h:58},
-        {type:"saw",x:1880,w:50,h:39},{type:"gap",x:2300,w:132},{type:"spikes",x:2765,w:110,h:29},
-        {type:"drone",x:3200,w:58,h:36},{type:"gap",x:3640,w:136},{type:"crate",x:4100,w:62,h:58},{type:"tunnel",x:2920,w:190,h:30},{type:"spikes",x:3850,w:100,h:28},{type:"beam",x:4370,w:104,h:26}
+        {type:"drone",x:530,w:50,h:32},
+        {type:"gap",x:960,w:105},
+        {type:"crate",x:1425,w:54,h:46},
+        {type:"saw",x:1880,w:44,h:32},
+        {type:"gap",x:2300,w:110},
+        {type:"tunnel",x:2800,w:180,h:30},
+        {type:"spikes",x:3280,w:84,h:22},
+        {type:"crate",x:3750,w:54,h:46},
+        {type:"gap",x:4200,w:108}
       ],
       coinGroups:[{x:280,y:395,count:5,step:43},{x:500,y:294,count:5,step:42,arc:42},{x:850,y:325,count:5,step:42,arc:22},{x:1270,y:395,count:4,step:43},{x:1400,y:295,count:5,step:42,arc:42},{x:1730,y:325,count:5,step:42,arc:22},{x:2150,y:395,count:4,step:43},{x:2290,y:298,count:5,step:42,arc:40},{x:2610,y:325,count:5,step:42,arc:22},{x:3020,y:395,count:4,step:43},{x:3180,y:293,count:5,step:42,arc:42},{x:3500,y:325,count:5,step:42,arc:22},{x:3950,y:395,count:4,step:43},{x:4250,y:300,count:5,step:42,arc:38}]
     }
@@ -90,25 +124,47 @@
     {
       name:"Skyrail Heights",subtitle:"Above the cloudline",icon:"☁",scene:"ice",length:4750,speed:5.15,
       theme:{top:"#132643",bottom:"#6d93b1",far:"#547b9d",mid:"#365b7d",ground:"#2b4a61",topline:"#c3edff",accent:"#9de3ff",glow:"#8edcff",coin:"#ffe39b",pit:"#10233e",particle:"#d5f5ff"},
-      hazards:[{type:"tunnel",x:510,w:210,h:30},{type:"gap",x:900,w:132},{type:"crate",x:1340,w:58,h:55},{type:"saw",x:1760,w:50,h:39},{type:"tunnel",x:2150,w:230,h:30},{type:"spikes",x:2540,w:106,h:29},{type:"drone",x:2960,w:56,h:36},{type:"gap",x:3370,w:138},{type:"crate",x:3820,w:62,h:58},{type:"beam",x:4240,w:105,h:26}],
+      hazards:[
+        {type:"tunnel",x:510,w:180,h:30},
+        {type:"gap",x:900,w:105},
+        {type:"crate",x:1340,w:54,h:46},
+        {type:"saw",x:1760,w:44,h:32},
+        {type:"tunnel",x:2150,w:180,h:30},
+        {type:"spikes",x:2540,w:84,h:22},
+        {type:"drone",x:2960,w:50,h:32},
+        {type:"gap",x:3370,w:108},
+        {type:"crate",x:3820,w:54,h:46},
+        {type:"tunnel",x:4240,w:170,h:30}
+      ],
       coinGroups:Array.from({length:13},(_,i)=>({x:280+i*340,y:i%2?320:395,count:4,step:43,arc:i%2?22:0}))
     },
     {
       name:"Verdant Circuit",subtitle:"The overgrown network",icon:"❧",scene:"meadow",length:4950,speed:5.25,
       theme:{top:"#122b2a",bottom:"#49776a",far:"#35675b",mid:"#234f46",ground:"#23443c",topline:"#a4e8bd",accent:"#8ce9a8",glow:"#75e6a2",coin:"#ffe58c",pit:"#0d2421",particle:"#b1f3ca"},
-      hazards:[{type:"spikes",x:520,w:100,h:29},{type:"gap",x:920,w:132},{type:"tunnel",x:1300,w:210,h:30},{type:"drone",x:1700,w:56,h:36},{type:"saw",x:2100,w:50,h:39},{type:"gap",x:2520,w:136},{type:"crate",x:2990,w:60,h:56},{type:"tunnel",x:3430,w:210,h:30},{type:"spikes",x:3850,w:108,h:29},{type:"drone",x:4250,w:56,h:36},{type:"gap",x:4600,w:132}],
+      hazards:[
+        {type:"spikes",x:520,w:84,h:22},
+        {type:"gap",x:920,w:105},
+        {type:"tunnel",x:1300,w:180,h:30},
+        {type:"drone",x:1700,w:50,h:32},
+        {type:"saw",x:2100,w:44,h:32},
+        {type:"gap",x:2520,w:108},
+        {type:"crate",x:2990,w:54,h:46},
+        {type:"tunnel",x:3430,w:180,h:30},
+        {type:"spikes",x:4000,w:84,h:22},
+        {type:"gap",x:4500,w:110}
+      ],
       coinGroups:Array.from({length:14},(_,i)=>({x:260+i*335,y:i%2?322:395,count:4,step:43,arc:i%2?24:0}))
     },
     {
       name:"Magma Frontier",subtitle:"The furnace below",icon:"♨",scene:"foundry",length:5150,speed:5.4,
       theme:{top:"#2a1525",bottom:"#7a3d3f",far:"#6e3944",mid:"#4a2939",ground:"#3b2634",topline:"#ffb078",accent:"#ff956c",glow:"#ff704f",coin:"#ffe28b",pit:"#1b101c",particle:"#ffb18a"},
-      hazards:[{type:"crate",x:500,w:58,h:55},{type:"tunnel",x:850,w:210,h:30},{type:"gap",x:1200,w:136},{type:"saw",x:1660,w:50,h:39},{type:"spikes",x:2050,w:108,h:29},{type:"drone",x:2460,w:56,h:36},{type:"gap",x:2870,w:138},{type:"tunnel",x:3320,w:230,h:30},{type:"crate",x:3740,w:62,h:58},{type:"saw",x:4170,w:50,h:39},{type:"gap",x:4560,w:140}],
+      hazards:[{type:"crate",x:500,w:58,h:55},{type:"tunnel",x:850,w:210,h:30},{type:"gap",x:1200,w:136},{type:"saw",x:1660,w:50,h:39},{type:"spikes",x:2050,w:108,h:22},{type:"drone",x:2460,w:56,h:36},{type:"gap",x:2870,w:138},{type:"tunnel",x:3320,w:230,h:30},{type:"crate",x:3740,w:62,h:58},{type:"saw",x:4170,w:50,h:39},{type:"gap",x:4560,w:140}],
       coinGroups:Array.from({length:15},(_,i)=>({x:250+i*335,y:i%2?322:395,count:4,step:43,arc:i%2?24:0}))
     },
     {
       name:"Quantum Citadel",subtitle:"The final frontier",icon:"✧",scene:"space",length:5500,speed:5.55,
       theme:{top:"#090e2b",bottom:"#37316d",far:"#2e2a63",mid:"#211f50",ground:"#252747",topline:"#b5a6ff",accent:"#b59bff",glow:"#a98aff",coin:"#ffe18c",pit:"#080c20",particle:"#d0baff"},
-      hazards:[{type:"drone",x:530,w:58,h:36},{type:"tunnel",x:890,w:230,h:30},{type:"spikes",x:1270,w:108,h:29},{type:"gap",x:1690,w:140},{type:"crate",x:2150,w:62,h:58},{type:"saw",x:2570,w:50,h:39},{type:"tunnel",x:3000,w:240,h:30},{type:"gap",x:3440,w:142},{type:"drone",x:3900,w:58,h:36},{type:"spikes",x:4310,w:110,h:29},{type:"gap",x:4750,w:144},{type:"crate",x:5190,w:64,h:60}],
+      hazards:[{type:"drone",x:530,w:58,h:36},{type:"tunnel",x:890,w:230,h:30},{type:"spikes",x:1270,w:108,h:22},{type:"gap",x:1690,w:140},{type:"crate",x:2150,w:62,h:58},{type:"saw",x:2570,w:50,h:39},{type:"tunnel",x:3000,w:240,h:30},{type:"gap",x:3440,w:142},{type:"drone",x:3900,w:58,h:36},{type:"spikes",x:4310,w:110,h:22},{type:"gap",x:4750,w:144},{type:"crate",x:5190,w:64,h:60}],
       coinGroups:Array.from({length:16},(_,i)=>({x:260+i*330,y:i%2?322:395,count:4,step:43,arc:i%2?24:0}))
     }
   ];
@@ -163,7 +219,8 @@
   function loadLevel(index,showMessage) {
     state.index = Math.max(0,Math.min(worlds.length-1,index));
     level = worlds[state.index];
-    hazards = level.hazards.map((h,i)=>({...h,passed:false,phase:i*1.7}));
+    hazards = level.hazards.map((h,i)=>({...h,passed:false,phase:i*1.7})).sort((a,b)=>a.x-b.x);
+    hazards.forEach(h=>{if(h.type==="tunnel")h.floorY=getBaseGroundY(h.x+h.w/2);});
     coins = makeCoins(level.coinGroups);
     particles = []; state.camera = 0; state.transition = 0; state.distanceScore = 0;
     player.x=140; player.ducking=false; player.duckRequested=false; player.h=58; player.y=getGroundY(player.x+player.w/2)-player.h; player.vy=0; player.grounded=true; player.run=0; player.trail=[];
@@ -204,7 +261,7 @@
     const t=Math.max(0,Math.min(1,value));
     return t*t*(3-2*t);
   }
-  function getGroundY(x) {
+  function getBaseGroundY(x) {
     const cycle=1260,offset=state.index*187+93;
     const p=((x+offset)%cycle+cycle)%cycle;
     let shape=0;
@@ -217,6 +274,18 @@
     else shape=58*(1-smoothStep((p-1140)/120));
     const smallBumps=Math.sin((x+offset)*0.008)*5+Math.sin((x+offset)*0.019)*2.2;
     return GROUND+shape+smallBumps;
+  }
+  function getGroundY(x) {
+    const tunnel=hazards.find(h=>h.type==="tunnel" && x>=h.x-70 && x<=h.x+h.w+70);
+    if(!tunnel || !Number.isFinite(tunnel.floorY)) return getBaseGroundY(x);
+    const base=getBaseGroundY(x),floor=tunnel.floorY;
+    if(x<tunnel.x){
+      const blend=smoothStep((x-(tunnel.x-70))/70);
+      return base+(floor-base)*blend;
+    }
+    if(x<=tunnel.x+tunnel.w) return floor;
+    const blend=smoothStep((x-(tunnel.x+tunnel.w))/70);
+    return floor+(base-floor)*blend;
   }
 
   function getGapAt(x) { return hazards.find(h=>h.type==="gap" && x>=h.x && x<=h.x+h.w); }
@@ -250,18 +319,29 @@
     }
     return nearest?{hazard:nearest,distance:bestDist}:null;
   }
+  function jumpLead(h) {
+    const flightFrames=(2*Math.abs(JUMP))/GRAVITY;
+    const jumpRange=level.speed*flightFrames;
+    if(h.type==="gap") return Math.max(54,Math.min(112,jumpRange-h.w-player.w/2-18));
+    if(h.type==="drone") return Math.min(150,level.speed*28);
+    if(h.type==="saw") return Math.min(138,level.speed*27);
+    return Math.min(128,level.speed*25);
+  }
   function autopilot() {
-    if(!state.auto || !player.grounded) return;
+    if(!state.auto) return;
     const next=nearestHazard();
-    if(!next){setDuck(false);return;}
-    const h=next.hazard;
+    if(!next){if(player.ducking||player.duckRequested)setDuck(false);return;}
+    const h=next.hazard,distance=next.distance;
     if(h.type==="beam" || h.type==="tunnel"){
-      setDuck(next.distance<=190 && next.distance>-h.w-72);
+      const enterAt=Math.min(245,level.speed*43);
+      const leaveAt=-h.w-player.w-8;
+      setDuck(distance<=enterAt && distance>leaveAt);
       return;
     }
-    setDuck(false);
-    const lead=h.type==="gap"?Math.max(70,Math.min(125,level.speed*52-h.w-20)):116;
-    if(next.distance<=lead && next.distance>-12) triggerJump();
+    if(player.ducking||player.duckRequested)setDuck(false);
+    if(!player.grounded) return;
+    const lead=jumpLead(h);
+    if(distance<=lead && distance>=-player.w*.4) triggerJump();
   }
   function rectsOverlap(a,b) {
     return a.x < b.x+b.w && a.x+a.w > b.x && a.y < b.y+b.h && a.y+a.h > b.y;
@@ -271,16 +351,9 @@
     if(h.type==="crate") return {x:h.x+5,y:ground-h.h+5,w:h.w-10,h:h.h-5};
     if(h.type==="spikes") return {x:h.x+5,y:ground-h.h+6,w:h.w-10,h:h.h-6};
     if(h.type==="saw") return {x:h.x+5,y:ground-38,w:h.w-10,h:34};
-    if(h.type==="drone") return {x:h.x+4,y:ground-66+Math.sin(state.time*2.1+h.phase)*8,w:h.w-8,h:30};
+    if(h.type==="drone") return {x:h.x+4,y:ground-44+Math.sin(state.time*2.1+h.phase)*8,w:h.w-8,h:24};
     if(h.type==="beam") return {x:h.x+5,y:getGroundY(h.x+h.w/2)-61,w:h.w-10,h:25};
-    if(h.type==="tunnel") {
-      const boxes=[];
-      for(let x=h.x;x<h.x+h.w;x+=12){
-        const w=Math.min(12,h.x+h.w-x),groundAtSegment=getGroundY(x+w/2);
-        boxes.push({x:x+1,y:groundAtSegment-62,w:Math.max(1,w-2),h:28});
-      }
-      return boxes;
-    }
+    if(h.type==="tunnel") return {x:h.x+4,y:h.floorY-70,w:h.w-8,h:28};
     return null;
   }
   function respawn() {
@@ -530,7 +603,7 @@
     ctx.fillStyle="#c4ceef";ctx.beginPath();ctx.arc(0,0,4,0,Math.PI*2);ctx.fill();ctx.restore();
   }
   function drawDrone(h,x){
-    const y=getGroundY(h.x+h.w/2)-66+Math.sin(state.time*2.1+h.phase)*8;
+    const y=getGroundY(h.x+h.w/2)-50+Math.sin(state.time*2.1+h.phase)*8;
     ctx.save();ctx.translate(x+h.w/2,y+h.h/2);
     ctx.shadowColor=level.theme.glow;ctx.shadowBlur=18;
     rounded(-23,-12,46,24,10,level.theme.mid);ctx.shadowBlur=0;
@@ -549,21 +622,17 @@
     ctx.beginPath();ctx.moveTo(x+8,y+26);ctx.lineTo(x+8,y+33);ctx.moveTo(x+h.w-8,y+26);ctx.lineTo(x+h.w-8,y+33);ctx.stroke();ctx.restore();
   }
   function drawTunnel(h,x){
-    ctx.save();ctx.shadowColor=level.theme.glow;ctx.shadowBlur=17;
-    for(let wx=h.x;wx<h.x+h.w;wx+=12){
-      const segmentWidth=Math.min(12,h.x+h.w-wx),screenX=wx-state.camera;
-      const roofY=getGroundY(wx+segmentWidth/2)-64;
-      const grad=ctx.createLinearGradient(screenX,roofY,screenX,roofY+30);
-      grad.addColorStop(0,level.theme.topline);grad.addColorStop(.45,level.theme.accent);grad.addColorStop(1,level.theme.mid);
-      ctx.fillStyle=grad;ctx.fillRect(screenX,roofY,segmentWidth+1,30);
-      ctx.shadowBlur=0;ctx.fillStyle="rgba(8,12,24,.72)";ctx.fillRect(screenX+2,roofY+9,Math.max(2,segmentWidth-4),4);
-      ctx.shadowBlur=17;
-    }
-    const leftY=getGroundY(h.x)-64,rightY=getGroundY(h.x+h.w)-64;
-    rounded(x,leftY,10,Math.max(8,getGroundY(h.x)-leftY),4,level.theme.mid);
-    rounded(x+h.w-10,rightY,10,Math.max(8,getGroundY(h.x+h.w)-rightY),4,level.theme.mid);
-    ctx.shadowBlur=0;ctx.fillStyle="#fff";ctx.globalAlpha=.95;ctx.font="800 10px Manrope,Arial";ctx.textAlign="center";
-    ctx.fillText("DUCK  ↓",x+h.w/2,getGroundY(h.x+h.w/2)-43);ctx.globalAlpha=1;ctx.restore();
+    const roofY=h.floorY-70;
+    const grad=ctx.createLinearGradient(x,roofY,x,roofY+28);
+    grad.addColorStop(0,level.theme.topline);grad.addColorStop(.45,level.theme.accent);grad.addColorStop(1,level.theme.mid);
+    ctx.save();ctx.shadowColor=level.theme.glow;ctx.shadowBlur=18;
+    rounded(x,roofY,h.w,28,8,grad);ctx.shadowBlur=0;
+    ctx.fillStyle="rgba(8,12,24,.7)";
+    for(let sx=x+16;sx<x+h.w-12;sx+=28)ctx.fillRect(sx,roofY+9,13,5);
+    rounded(x,roofY+28,12,Math.max(8,h.floorY-roofY-28),4,level.theme.mid);
+    rounded(x+h.w-12,roofY+28,12,Math.max(8,h.floorY-roofY-28),4,level.theme.mid);
+    ctx.fillStyle="#fff";ctx.globalAlpha=.95;ctx.font="800 10px Manrope,Arial";ctx.textAlign="center";
+    ctx.fillText("DUCK  ↓",x+h.w/2,h.floorY-49);ctx.globalAlpha=1;ctx.restore();
   }
   function drawHazards(){
     for(const h of hazards){
