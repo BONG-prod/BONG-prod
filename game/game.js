@@ -35,7 +35,7 @@
     const pct = Math.max(0, Math.min(100, (player.x / stage.length) * 100));
     ui.progress.style.width = pct.toFixed(1) + "%"; ui.progressText.textContent = Math.floor(pct) + "%";
   }
-  function resetRun() { score = 0; coinCount = 0; stageIndex = 0; runs = 1; loadStage(); notify("NEW RUN — GOOD LUCK"); }
+  function resetRun() { score = 0; coinCount = 0; stageIndex = 0; runs = 1; elapsed = 0; loadStage(); notify("NEW RUN — GOOD LUCK"); }
   function jump() { if (player.onGround && !paused) { player.vy = JUMP; player.onGround = false; player.runFrame += 1; } }
   function getGapAt(x) { return hazards.find(h => h.type === "gap" && x >= h.x && x <= h.x + h.w); }
 
@@ -80,8 +80,8 @@
   function crash() {
     score = Math.max(0, score - 100);
     player.x = 120; player.y = GROUND - player.h; player.vy = 0; player.onGround = true;
-    hazards.forEach(h => h.passed = false); coins.forEach(c => { if (c.x > 120) c.taken = false; });
-    cameraX = 0; notify(auto ? "OOPS — RETRYING THE STAGE" : "OOPS — PRESS SPACE TO TRY AGAIN");
+    hazards.forEach(h => h.passed = false);
+    cameraX = 0; notify(auto ? "OOPS — AUTOPILOT RETRY" : "RESET TO START — TRY AGAIN");
   }
   function completeStage() {
     score += 500 + Math.max(0, 400 - Math.floor((elapsed / 1000) * 2));
