@@ -32,7 +32,7 @@
       hazards:[
         {type:"crate",x:570,w:54,h:52},{type:"gap",x:1010,w:116},{type:"spikes",x:1480,w:90,h:27},
         {type:"saw",x:1925,w:48,h:38},{type:"crate",x:2390,w:58,h:55},{type:"gap",x:2815,w:124},
-        {type:"drone",x:3280,w:54,h:34},{type:"spikes",x:3605,w:96,h:27},{type:"beam",x:700,w:96,h:26},{type:"crate",x:1275,w:56,h:52},{type:"beam",x:2140,w:102,h:26},{type:"spikes",x:2600,w:94,h:27}
+        {type:"drone",x:3280,w:54,h:34},{type:"spikes",x:3605,w:96,h:27},{type:"tunnel",x:700,w:190,h:30},{type:"crate",x:1275,w:56,h:52},{type:"tunnel",x:1645,w:190,h:30},{type:"tunnel",x:2140,w:190,h:30},{type:"spikes",x:2600,w:94,h:27}
       ],
       coinGroups:[{x:325,y:397,count:5,step:42},{x:545,y:300,count:4,step:43,arc:42},{x:850,y:325,count:5,step:42,arc:23},{x:1300,y:395,count:4,step:43},{x:1455,y:306,count:5,step:41,arc:40},{x:1830,y:325,count:4,step:43,arc:24},{x:2250,y:395,count:5,step:42},{x:2370,y:290,count:4,step:43,arc:39},{x:2670,y:320,count:5,step:42,arc:22},{x:3100,y:395,count:4,step:42},{x:3500,y:305,count:5,step:42,arc:38}]
     },
@@ -42,7 +42,7 @@
       hazards:[
         {type:"spikes",x:530,w:84,h:28},{type:"gap",x:930,w:120},{type:"drone",x:1370,w:54,h:34},
         {type:"crate",x:1810,w:58,h:55},{type:"gap",x:2240,w:126},{type:"saw",x:2705,w:48,h:38},
-        {type:"spikes",x:3100,w:100,h:29},{type:"gap",x:3515,w:122},{type:"crate",x:1590,w:58,h:55}
+        {type:"spikes",x:3100,w:100,h:29},{type:"gap",x:3515,w:122},{type:"tunnel",x:1960,w:190,h:30},{type:"crate",x:1590,w:58,h:55}
       ],
       coinGroups:[{x:290,y:395,count:5,step:43},{x:495,y:302,count:5,step:42,arc:38},{x:790,y:333,count:5,step:42,arc:22},{x:1240,y:395,count:4,step:43},{x:1350,y:292,count:5,step:42,arc:46},{x:1660,y:330,count:5,step:43,arc:20},{x:2070,y:395,count:4,step:43},{x:2210,y:300,count:5,step:42,arc:39},{x:2540,y:330,count:5,step:42,arc:24},{x:2920,y:395,count:4,step:43},{x:3070,y:300,count:5,step:42,arc:38},{x:3410,y:335,count:5,step:42,arc:21},{x:3750,y:395,count:4,step:43}]
     },
@@ -52,7 +52,7 @@
       hazards:[
         {type:"crate",x:560,w:56,h:52},{type:"saw",x:960,w:48,h:38},{type:"gap",x:1330,w:122},
         {type:"drone",x:1790,w:54,h:34},{type:"spikes",x:2220,w:104,h:28},{type:"gap",x:2655,w:130},
-        {type:"crate",x:3090,w:58,h:56},{type:"saw",x:3500,w:48,h:38},{type:"gap",x:3860,w:125},{type:"beam",x:2370,w:104,h:26}
+        {type:"crate",x:3090,w:58,h:56},{type:"saw",x:3500,w:48,h:38},{type:"gap",x:3860,w:125},{type:"tunnel",x:2370,w:200,h:30}
       ],
       coinGroups:[{x:305,y:395,count:5,step:43},{x:530,y:300,count:5,step:42,arc:42},{x:830,y:320,count:5,step:42,arc:25},{x:1210,y:395,count:4,step:43},{x:1300,y:294,count:5,step:42,arc:42},{x:1640,y:325,count:5,step:42,arc:22},{x:2040,y:395,count:4,step:43},{x:2200,y:305,count:5,step:42,arc:39},{x:2500,y:326,count:5,step:42,arc:21},{x:2950,y:395,count:4,step:43},{x:3070,y:300,count:5,step:42,arc:42},{x:3400,y:325,count:5,step:42,arc:22},{x:3740,y:395,count:4,step:43}]
     },
@@ -72,7 +72,7 @@
       hazards:[
         {type:"crate",x:540,w:58,h:54},{type:"gap",x:980,w:126},{type:"saw",x:1440,w:50,h:39},
         {type:"spikes",x:1880,w:102,h:28},{type:"gap",x:2300,w:132},{type:"drone",x:2780,w:56,h:36},
-        {type:"crate",x:3215,w:62,h:58},{type:"spikes",x:3650,w:108,h:29},{type:"gap",x:4055,w:128},{type:"beam",x:3390,w:104,h:26}
+        {type:"crate",x:3215,w:62,h:58},{type:"spikes",x:3650,w:108,h:29},{type:"gap",x:4055,w:128},{type:"tunnel",x:1600,w:190,h:30},{type:"tunnel",x:3390,w:190,h:30}
       ],
       coinGroups:[{x:295,y:395,count:5,step:43},{x:510,y:300,count:5,step:42,arc:42},{x:870,y:325,count:5,step:42,arc:22},{x:1290,y:395,count:4,step:43},{x:1420,y:295,count:5,step:42,arc:41},{x:1740,y:326,count:5,step:42,arc:22},{x:2150,y:395,count:4,step:43},{x:2290,y:300,count:5,step:42,arc:40},{x:2600,y:325,count:5,step:42,arc:22},{x:3030,y:395,count:4,step:43},{x:3190,y:295,count:5,step:42,arc:40},{x:3490,y:326,count:5,step:42,arc:22},{x:3890,y:395,count:4,step:43},{x:4150,y:325,count:4,step:42}]
     },
@@ -82,7 +82,7 @@
       hazards:[
         {type:"drone",x:530,w:56,h:36},{type:"gap",x:960,w:130},{type:"crate",x:1425,w:60,h:58},
         {type:"saw",x:1880,w:50,h:39},{type:"gap",x:2300,w:132},{type:"spikes",x:2765,w:110,h:29},
-        {type:"drone",x:3200,w:58,h:36},{type:"gap",x:3640,w:136},{type:"crate",x:4100,w:62,h:58},{type:"beam",x:2520,w:108,h:26},{type:"spikes",x:3850,w:100,h:28},{type:"beam",x:4370,w:104,h:26}
+        {type:"drone",x:3200,w:58,h:36},{type:"gap",x:3640,w:136},{type:"crate",x:4100,w:62,h:58},{type:"tunnel",x:2920,w:190,h:30},{type:"spikes",x:3850,w:100,h:28},{type:"beam",x:4370,w:104,h:26}
       ],
       coinGroups:[{x:280,y:395,count:5,step:43},{x:500,y:294,count:5,step:42,arc:42},{x:850,y:325,count:5,step:42,arc:22},{x:1270,y:395,count:4,step:43},{x:1400,y:295,count:5,step:42,arc:42},{x:1730,y:325,count:5,step:42,arc:22},{x:2150,y:395,count:4,step:43},{x:2290,y:298,count:5,step:42,arc:40},{x:2610,y:325,count:5,step:42,arc:22},{x:3020,y:395,count:4,step:43},{x:3180,y:293,count:5,step:42,arc:42},{x:3500,y:325,count:5,step:42,arc:22},{x:3950,y:395,count:4,step:43},{x:4250,y:300,count:5,step:42,arc:38}]
     }
@@ -90,25 +90,25 @@
     {
       name:"Skyrail Heights",subtitle:"Above the cloudline",icon:"☁",scene:"ice",length:4750,speed:5.15,
       theme:{top:"#132643",bottom:"#6d93b1",far:"#547b9d",mid:"#365b7d",ground:"#2b4a61",topline:"#c3edff",accent:"#9de3ff",glow:"#8edcff",coin:"#ffe39b",pit:"#10233e",particle:"#d5f5ff"},
-      hazards:[{type:"beam",x:510,w:100,h:26},{type:"gap",x:900,w:132},{type:"crate",x:1340,w:58,h:55},{type:"saw",x:1760,w:50,h:39},{type:"beam",x:2150,w:112,h:26},{type:"spikes",x:2540,w:106,h:29},{type:"drone",x:2960,w:56,h:36},{type:"gap",x:3370,w:138},{type:"crate",x:3820,w:62,h:58},{type:"beam",x:4240,w:105,h:26}],
+      hazards:[{type:"tunnel",x:510,w:210,h:30},{type:"gap",x:900,w:132},{type:"crate",x:1340,w:58,h:55},{type:"saw",x:1760,w:50,h:39},{type:"tunnel",x:2150,w:230,h:30},{type:"spikes",x:2540,w:106,h:29},{type:"drone",x:2960,w:56,h:36},{type:"gap",x:3370,w:138},{type:"crate",x:3820,w:62,h:58},{type:"beam",x:4240,w:105,h:26}],
       coinGroups:Array.from({length:13},(_,i)=>({x:280+i*340,y:i%2?320:395,count:4,step:43,arc:i%2?22:0}))
     },
     {
       name:"Verdant Circuit",subtitle:"The overgrown network",icon:"❧",scene:"meadow",length:4950,speed:5.25,
       theme:{top:"#122b2a",bottom:"#49776a",far:"#35675b",mid:"#234f46",ground:"#23443c",topline:"#a4e8bd",accent:"#8ce9a8",glow:"#75e6a2",coin:"#ffe58c",pit:"#0d2421",particle:"#b1f3ca"},
-      hazards:[{type:"spikes",x:520,w:100,h:29},{type:"gap",x:920,w:132},{type:"beam",x:1300,w:108,h:26},{type:"drone",x:1700,w:56,h:36},{type:"saw",x:2100,w:50,h:39},{type:"gap",x:2520,w:136},{type:"crate",x:2990,w:60,h:56},{type:"beam",x:3430,w:112,h:26},{type:"spikes",x:3850,w:108,h:29},{type:"drone",x:4250,w:56,h:36},{type:"gap",x:4600,w:132}],
+      hazards:[{type:"spikes",x:520,w:100,h:29},{type:"gap",x:920,w:132},{type:"tunnel",x:1300,w:210,h:30},{type:"drone",x:1700,w:56,h:36},{type:"saw",x:2100,w:50,h:39},{type:"gap",x:2520,w:136},{type:"crate",x:2990,w:60,h:56},{type:"tunnel",x:3430,w:210,h:30},{type:"spikes",x:3850,w:108,h:29},{type:"drone",x:4250,w:56,h:36},{type:"gap",x:4600,w:132}],
       coinGroups:Array.from({length:14},(_,i)=>({x:260+i*335,y:i%2?322:395,count:4,step:43,arc:i%2?24:0}))
     },
     {
       name:"Magma Frontier",subtitle:"The furnace below",icon:"♨",scene:"foundry",length:5150,speed:5.4,
       theme:{top:"#2a1525",bottom:"#7a3d3f",far:"#6e3944",mid:"#4a2939",ground:"#3b2634",topline:"#ffb078",accent:"#ff956c",glow:"#ff704f",coin:"#ffe28b",pit:"#1b101c",particle:"#ffb18a"},
-      hazards:[{type:"crate",x:500,w:58,h:55},{type:"beam",x:850,w:104,h:26},{type:"gap",x:1200,w:136},{type:"saw",x:1660,w:50,h:39},{type:"spikes",x:2050,w:108,h:29},{type:"drone",x:2460,w:56,h:36},{type:"gap",x:2870,w:138},{type:"beam",x:3320,w:112,h:26},{type:"crate",x:3740,w:62,h:58},{type:"saw",x:4170,w:50,h:39},{type:"gap",x:4560,w:140}],
+      hazards:[{type:"crate",x:500,w:58,h:55},{type:"tunnel",x:850,w:210,h:30},{type:"gap",x:1200,w:136},{type:"saw",x:1660,w:50,h:39},{type:"spikes",x:2050,w:108,h:29},{type:"drone",x:2460,w:56,h:36},{type:"gap",x:2870,w:138},{type:"tunnel",x:3320,w:230,h:30},{type:"crate",x:3740,w:62,h:58},{type:"saw",x:4170,w:50,h:39},{type:"gap",x:4560,w:140}],
       coinGroups:Array.from({length:15},(_,i)=>({x:250+i*335,y:i%2?322:395,count:4,step:43,arc:i%2?24:0}))
     },
     {
       name:"Quantum Citadel",subtitle:"The final frontier",icon:"✧",scene:"space",length:5500,speed:5.55,
       theme:{top:"#090e2b",bottom:"#37316d",far:"#2e2a63",mid:"#211f50",ground:"#252747",topline:"#b5a6ff",accent:"#b59bff",glow:"#a98aff",coin:"#ffe18c",pit:"#080c20",particle:"#d0baff"},
-      hazards:[{type:"drone",x:530,w:58,h:36},{type:"beam",x:890,w:106,h:26},{type:"spikes",x:1270,w:108,h:29},{type:"gap",x:1690,w:140},{type:"crate",x:2150,w:62,h:58},{type:"saw",x:2570,w:50,h:39},{type:"beam",x:3000,w:116,h:26},{type:"gap",x:3440,w:142},{type:"drone",x:3900,w:58,h:36},{type:"spikes",x:4310,w:110,h:29},{type:"gap",x:4750,w:144},{type:"crate",x:5190,w:64,h:60}],
+      hazards:[{type:"drone",x:530,w:58,h:36},{type:"tunnel",x:890,w:230,h:30},{type:"spikes",x:1270,w:108,h:29},{type:"gap",x:1690,w:140},{type:"crate",x:2150,w:62,h:58},{type:"saw",x:2570,w:50,h:39},{type:"tunnel",x:3000,w:240,h:30},{type:"gap",x:3440,w:142},{type:"drone",x:3900,w:58,h:36},{type:"spikes",x:4310,w:110,h:29},{type:"gap",x:4750,w:144},{type:"crate",x:5190,w:64,h:60}],
       coinGroups:Array.from({length:16},(_,i)=>({x:260+i*330,y:i%2?322:395,count:4,step:43,arc:i%2?24:0}))
     }
   ];
@@ -166,7 +166,7 @@
     hazards = level.hazards.map((h,i)=>({...h,passed:false,phase:i*1.7}));
     coins = makeCoins(level.coinGroups);
     particles = []; state.camera = 0; state.transition = 0; state.distanceScore = 0;
-    player.x=140; player.ducking=false; player.h=58; player.y=getGroundY(player.x+player.w/2)-player.h; player.vy=0; player.grounded=true; player.run=0; player.trail=[];
+    player.x=140; player.ducking=false; player.duckRequested=false; player.h=58; player.y=getGroundY(player.x+player.w/2)-player.h; player.vy=0; player.grounded=true; player.run=0; player.trail=[];
     updateUI();
     updateWorldCards();
     if(showMessage) notify("WORLD " + String(state.index+1).padStart(2,"0"),level.name.toUpperCase(),1050);
@@ -200,19 +200,44 @@
     const pct=Math.max(0,Math.min(100,(player.x/level.length)*100));
     ui.progress.style.width=pct.toFixed(1)+"%"; ui.progressText.textContent=Math.floor(pct)+"%";
   }
+  function smoothStep(value) {
+    const t=Math.max(0,Math.min(1,value));
+    return t*t*(3-2*t);
+  }
   function getGroundY(x) {
-    const seed=state.index*0.91;
-    const rolling=Math.sin(x*0.00215+seed)*18+Math.sin(x*0.0049+seed*1.6)*8+Math.sin(x*0.00105+seed*2.3)*10;
-    return GROUND+rolling;
+    const cycle=1260,offset=state.index*187+93;
+    const p=((x+offset)%cycle+cycle)%cycle;
+    let shape=0;
+    if(p<280) shape=-94*smoothStep(p/280);
+    else if(p<520) shape=-94;
+    else if(p<800) shape=-94+94*smoothStep((p-520)/280);
+    else if(p<920) shape=0;
+    else if(p<1040) shape=58*smoothStep((p-920)/120);
+    else if(p<1140) shape=58;
+    else shape=58*(1-smoothStep((p-1140)/120));
+    const smallBumps=Math.sin((x+offset)*0.008)*5+Math.sin((x+offset)*0.019)*2.2;
+    return GROUND+shape+smallBumps;
+  }
+  function getCeilingY(h) {
+    let highestGround=Infinity;
+    for(let x=h.x;x<=h.x+h.w;x+=12) highestGround=Math.min(highestGround,getGroundY(x));
+    highestGround=Math.min(highestGround,getGroundY(h.x+h.w));
+    return highestGround-64;
   }
   function getGapAt(x) { return hazards.find(h=>h.type==="gap" && x>=h.x && x<=h.x+h.w); }
   function setDuck(value) {
     value=Boolean(value);
+    player.duckRequested=value;
     if(value && !player.grounded) return;
     if(player.ducking===value) return;
     const feet=player.y+player.h;
     player.ducking=value;player.h=value?34:58;player.y=feet-player.h;
   }
+  function beginManualDuck() {
+    if(state.auto) setAutopilot(false);
+    setDuck(true);
+  }
+  function endManualDuck() { setDuck(false); }
   function triggerJump() {
     if(!player.grounded || state.paused || state.transition>0) return false;
     setDuck(false);
@@ -235,8 +260,8 @@
     const next=nearestHazard();
     if(!next){setDuck(false);return;}
     const h=next.hazard;
-    if(h.type==="beam"){
-      setDuck(next.distance<=158 && next.distance>-h.w-55);
+    if(h.type==="beam" || h.type==="tunnel"){
+      setDuck(next.distance<=190 && next.distance>-h.w-72);
       return;
     }
     setDuck(false);
@@ -252,7 +277,7 @@
     if(h.type==="spikes") return {x:h.x+5,y:ground-h.h+6,w:h.w-10,h:h.h-6};
     if(h.type==="saw") return {x:h.x+5,y:ground-38,w:h.w-10,h:34};
     if(h.type==="drone") return {x:h.x+4,y:ground-66+Math.sin(state.time*2.1+h.phase)*8,w:h.w-8,h:30};
-    if(h.type==="beam") return {x:h.x+5,y:ground-59,w:h.w-10,h:25};
+    if(h.type==="beam" || h.type==="tunnel") return {x:h.x+4,y:getCeilingY(h),w:h.w-8,h:28};
     return null;
   }
   function respawn() {
@@ -264,7 +289,7 @@
       addParticles(player.x+20,GROUND-4,26,"#ff98a8",2.2,42,3);
       notify("RUN RESET","THREE NEW LIVES. TAKE ANOTHER SHOT.",1450);
     } else {
-      player.x=140; player.ducking=false; player.h=58; player.y=getGroundY(player.x+player.w/2)-player.h; player.vy=0; player.grounded=true; player.run=0; player.trail=[];
+      player.x=140; player.ducking=false; player.duckRequested=false; player.h=58; player.y=getGroundY(player.x+player.w/2)-player.h; player.vy=0; player.grounded=true; player.run=0; player.trail=[];
       state.camera=0; particles=[];
       hazards.forEach(h=>h.passed=false);
       coins=makeCoins(level.coinGroups);
@@ -298,16 +323,21 @@
     }
     autopilot();
 
+    const wasGrounded=player.grounded;
     player.x += level.speed*dt;
-    player.vy += GRAVITY*dt;
-    player.y += player.vy*dt;
     const center=player.x+player.w*0.52,groundY=getGroundY(center);
     const inGap=Boolean(getGapAt(center));
-    if(player.y+player.h>=groundY && !inGap && player.vy>=0){
-      player.y=groundY-player.h; player.vy=0;
-      if(!player.grounded) addParticles(player.x+20,groundY-2,5,level.theme.particle,.6,17,2);
-      player.grounded=true;
-    } else player.grounded=false;
+    if(wasGrounded && !inGap){
+      player.y=groundY-player.h;player.vy=0;player.grounded=true;
+    } else {
+      player.vy+=GRAVITY*dt;player.y+=player.vy*dt;
+      if(player.y+player.h>=groundY && !inGap && player.vy>=0){
+        player.y=groundY-player.h;player.vy=0;
+        if(!wasGrounded)addParticles(player.x+20,groundY-2,5,level.theme.particle,.6,17,2);
+        player.grounded=true;
+      } else player.grounded=false;
+    }
+    if(player.grounded && player.duckRequested && !player.ducking) setDuck(true);
 
     player.run+=dt*(player.grounded?0.23:0.075);
     player.blink+=dt;
@@ -357,16 +387,19 @@
   }
   function drawSky() {
     const t=level.theme;
-    const sky=ctx.createLinearGradient(0,0,0,H);sky.addColorStop(0,t.top);sky.addColorStop(1,t.bottom);ctx.fillStyle=sky;ctx.fillRect(0,0,W,H);
-    glowCircle(820,125,215,t.glow,.34);
+    const sky=ctx.createLinearGradient(0,0,0,H);sky.addColorStop(0,t.top);sky.addColorStop(.62,t.bottom);sky.addColorStop(1,t.mid);ctx.fillStyle=sky;ctx.fillRect(0,0,W,H);
+    glowCircle(820,125,280,t.glow,.5);
+    const haze=ctx.createLinearGradient(0,H*.42,0,H);
+    haze.addColorStop(0,"rgba(0,0,0,0)");haze.addColorStop(.7,"rgba(0,0,0,.03)");haze.addColorStop(1,"rgba(0,0,0,.25)");
+    ctx.fillStyle=haze;ctx.fillRect(0,0,W,H);
     if(level.scene==="space"){
       ctx.save();ctx.strokeStyle="rgba(192,190,255,.18)";ctx.lineWidth=1;
       for(let i=0;i<3;i++){ctx.beginPath();ctx.ellipse(820,128,85+i*28,34+i*13,-.3,0,Math.PI*2);ctx.stroke();}
       ctx.restore();
       glowCircle(820,125,44,"#b6a1ff",.3);
     } else {
-      ctx.fillStyle="rgba(255,238,201,.16)";ctx.beginPath();ctx.arc(825,138,48,0,Math.PI*2);ctx.fill();
-      ctx.fillStyle="rgba(255,245,226,.17)";ctx.beginPath();ctx.arc(825,138,31,0,Math.PI*2);ctx.fill();
+      ctx.fillStyle="rgba(255,255,255,.20)";ctx.beginPath();ctx.arc(825,138,52,0,Math.PI*2);ctx.fill();
+      ctx.fillStyle=t.accent;ctx.globalAlpha=.35;ctx.beginPath();ctx.arc(825,138,36,0,Math.PI*2);ctx.fill();ctx.globalAlpha=1;
     }
     for(let i=0;i<85;i++){
       const x=((i*157-state.camera*(level.scene==="space"?.035:.07))%(W+40)+(W+40))%(W+40);
@@ -470,24 +503,24 @@
   }
   function drawCrate(h,x){
     const y=getGroundY(h.x+h.w/2)-h.h;
-    const gr=ctx.createLinearGradient(x,y,x+h.w,y+h.h);gr.addColorStop(0,"#b2a0a0");gr.addColorStop(.55,"#766b83");gr.addColorStop(1,"#3e405d");
+    const gr=ctx.createLinearGradient(x,y,x+h.w,y+h.h);gr.addColorStop(0,level.theme.topline);gr.addColorStop(.45,level.theme.accent);gr.addColorStop(1,level.theme.mid);
     rounded(x,y,h.w,h.h,7,gr);
-    ctx.strokeStyle="rgba(240,231,255,.42)";ctx.lineWidth=2;ctx.strokeRect(x+6,y+6,h.w-12,h.h-12);
-    ctx.strokeStyle="rgba(25,31,57,.7)";ctx.lineWidth=4;ctx.beginPath();ctx.moveTo(x+8,y+8);ctx.lineTo(x+h.w-8,y+h.h-8);ctx.moveTo(x+h.w-8,y+8);ctx.lineTo(x+8,y+h.h-8);ctx.stroke();
+    ctx.strokeStyle="rgba(255,255,255,.66)";ctx.lineWidth=2;ctx.strokeRect(x+6,y+6,h.w-12,h.h-12);
+    ctx.strokeStyle="rgba(8,12,24,.58)";ctx.lineWidth=4;ctx.beginPath();ctx.moveTo(x+8,y+8);ctx.lineTo(x+h.w-8,y+h.h-8);ctx.moveTo(x+h.w-8,y+8);ctx.lineTo(x+8,y+h.h-8);ctx.stroke();
     ctx.fillStyle="#d9d6ea";for(const p of [[x+7,y+7],[x+h.w-10,y+7],[x+7,y+h.h-10],[x+h.w-10,y+h.h-10]]){ctx.beginPath();ctx.arc(p[0],p[1],2,0,Math.PI*2);ctx.fill();}
     ctx.fillStyle="rgba(255,255,255,.16)";ctx.fillRect(x+9,y+7,h.w-18,3);
   }
   function drawSpikes(h,x){
-    const y=getGroundY(h.x+h.w/2)-h.h;
+    const base=getGroundY(h.x+h.w/2),y=base-h.h;
     ctx.shadowColor=level.theme.accent;ctx.shadowBlur=10;ctx.fillStyle=level.theme.accent;
-    ctx.beginPath();for(let sx=x;sx<x+h.w;sx+=20){ctx.moveTo(sx,GROUND);ctx.lineTo(sx+10,y);ctx.lineTo(sx+20,GROUND);}ctx.closePath();ctx.fill();ctx.shadowBlur=0;
-    ctx.fillStyle="rgba(255,255,255,.5)";for(let sx=x+7;sx<x+h.w;sx+=20){ctx.beginPath();ctx.moveTo(sx,GROUND-4);ctx.lineTo(sx+3,y+13);ctx.lineTo(sx+7,GROUND-4);ctx.fill();}
+    ctx.beginPath();for(let sx=x;sx<x+h.w;sx+=20){ctx.moveTo(sx,base);ctx.lineTo(sx+10,y);ctx.lineTo(sx+20,base);}ctx.closePath();ctx.fill();ctx.shadowBlur=0;
+    ctx.fillStyle="rgba(255,255,255,.62)";for(let sx=x+7;sx<x+h.w;sx+=20){ctx.beginPath();ctx.moveTo(sx,base-4);ctx.lineTo(sx+3,y+13);ctx.lineTo(sx+7,base-4);ctx.fill();}
   }
   function drawSaw(h,x){
     const y=getGroundY(h.x+h.w/2)-20,rot=state.time*5+h.phase;
     ctx.save();ctx.translate(x+h.w/2,y);ctx.rotate(rot);
     ctx.shadowColor="#ff98b4";ctx.shadowBlur=14;
-    ctx.fillStyle="#e2e7ff";ctx.beginPath();
+    ctx.fillStyle=level.theme.topline;ctx.beginPath();
     for(let i=0;i<24;i++){const a=i*Math.PI/12,r=i%2===0?24:17;const px=Math.cos(a)*r,py=Math.sin(a)*r;if(i===0)ctx.moveTo(px,py);else ctx.lineTo(px,py);}ctx.closePath();ctx.fill();
     ctx.shadowBlur=0;ctx.fillStyle="#59678e";ctx.beginPath();ctx.arc(0,0,10,0,Math.PI*2);ctx.fill();
     ctx.fillStyle="#c4ceef";ctx.beginPath();ctx.arc(0,0,4,0,Math.PI*2);ctx.fill();ctx.restore();
@@ -496,8 +529,8 @@
     const y=getGroundY(h.x+h.w/2)-66+Math.sin(state.time*2.1+h.phase)*8;
     ctx.save();ctx.translate(x+h.w/2,y+h.h/2);
     ctx.shadowColor=level.theme.glow;ctx.shadowBlur=18;
-    rounded(-23,-12,46,24,10,"#283653");ctx.shadowBlur=0;
-    rounded(-16,-8,32,14,7,"#7185b5");
+    rounded(-23,-12,46,24,10,level.theme.mid);ctx.shadowBlur=0;
+    rounded(-16,-8,32,14,7,level.theme.accent);
     ctx.fillStyle="#a7fff0";ctx.fillRect(-8,-2,5,4);ctx.fillRect(5,-2,5,4);
     ctx.strokeStyle=level.theme.accent;ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(-18,-13);ctx.lineTo(-25,-20);ctx.moveTo(18,-13);ctx.lineTo(25,-20);ctx.stroke();
     ctx.fillStyle="#e2e7ff";ctx.fillRect(-28,-22,12,3);ctx.fillRect(16,-22,12,3);
@@ -511,10 +544,23 @@
     ctx.fillStyle="#fff";ctx.globalAlpha=.7;ctx.fillRect(x+7,y+3,h.w-14,2);ctx.globalAlpha=1;ctx.strokeStyle=level.theme.glow;ctx.lineWidth=2;
     ctx.beginPath();ctx.moveTo(x+8,y+26);ctx.lineTo(x+8,y+33);ctx.moveTo(x+h.w-8,y+26);ctx.lineTo(x+h.w-8,y+33);ctx.stroke();ctx.restore();
   }
+  function drawTunnel(h,x){
+    const ground=getGroundY(h.x+h.w/2),y=getCeilingY(h);
+    const grad=ctx.createLinearGradient(x,y,x,y+34);
+    grad.addColorStop(0,level.theme.topline);grad.addColorStop(.45,level.theme.accent);grad.addColorStop(1,level.theme.mid);
+    ctx.save();ctx.shadowColor=level.theme.glow;ctx.shadowBlur=19;
+    rounded(x,y,h.w,30,7,grad);ctx.shadowBlur=0;
+    rounded(x+4,y+24,13,Math.max(8,ground-y-24),4,level.theme.mid);
+    rounded(x+h.w-17,y+24,13,Math.max(8,ground-y-24),4,level.theme.mid);
+    ctx.fillStyle="rgba(8,12,24,.78)";
+    for(let sx=x+24;sx<x+h.w-18;sx+=27)ctx.fillRect(sx,y+8,12,5);
+    ctx.fillStyle="#fff";ctx.globalAlpha=.9;ctx.font="800 10px Manrope,Arial";ctx.textAlign="center";ctx.fillText("DUCK  ↓",x+h.w/2,y+21);ctx.globalAlpha=1;
+    ctx.restore();
+  }
   function drawHazards(){
     for(const h of hazards){
       if(h.type==="gap"||h.x-state.camera>W+100||h.x+h.w-state.camera<-100)continue;const x=h.x-state.camera;
-      if(h.type==="crate")drawCrate(h,x);else if(h.type==="spikes")drawSpikes(h,x);else if(h.type==="saw")drawSaw(h,x);else if(h.type==="drone")drawDrone(h,x);else if(h.type==="beam")drawBeam(h,x);
+      if(h.type==="crate")drawCrate(h,x);else if(h.type==="spikes")drawSpikes(h,x);else if(h.type==="saw")drawSaw(h,x);else if(h.type==="drone")drawDrone(h,x);else if(h.type==="beam")drawBeam(h,x);else if(h.type==="tunnel")drawTunnel(h,x);
     }
   }
 
@@ -562,17 +608,17 @@
     if(player.ducking){ctx.translate(Math.round(x),Math.round(y+player.h));ctx.scale(1,player.h/58);ctx.translate(0,-58);}
     else ctx.translate(Math.round(x),Math.round(y));
     // scarf fluttering behind the runner
-    ctx.fillStyle="#a17de9";ctx.beginPath();ctx.moveTo(7,25);ctx.quadraticCurveTo(-10,20+scarf,-18,29+scarf);ctx.lineTo(-10,34+scarf);ctx.lineTo(8,32);ctx.closePath();ctx.fill();
+    ctx.fillStyle=level.theme.glow;ctx.beginPath();ctx.moveTo(7,25);ctx.quadraticCurveTo(-10,20+scarf,-18,29+scarf);ctx.lineTo(-10,34+scarf);ctx.lineTo(8,32);ctx.closePath();ctx.fill();
     // animated legs and boots
     const legA=run*7,legB=-run*7;
-    ctx.save();ctx.translate(12,41);ctx.rotate(legA*.045);rounded(-5,-1,10,14,4,"#334878");rounded(-7,9,14,7,4,"#a9baff");ctx.restore();
-    ctx.save();ctx.translate(29,41);ctx.rotate(legB*.045);rounded(-5,-1,10,14,4,"#334878");rounded(-7,9,14,7,4,"#a9baff");ctx.restore();
+    ctx.save();ctx.translate(12,41);ctx.rotate(legA*.045);rounded(-5,-1,10,14,4,level.theme.mid);rounded(-7,9,14,7,4,level.theme.topline);ctx.restore();
+    ctx.save();ctx.translate(29,41);ctx.rotate(legB*.045);rounded(-5,-1,10,14,4,level.theme.mid);rounded(-7,9,14,7,4,level.theme.topline);ctx.restore();
     // arms
     ctx.save();ctx.translate(7,28);ctx.rotate(-run*.11);rounded(-5,0,8,18,4,"#8298d6");ctx.restore();
     ctx.save();ctx.translate(34,28);ctx.rotate(run*.11);rounded(-3,0,8,18,4,"#8298d6");ctx.restore();
     // body
-    ctx.shadowColor=level.theme.glow;ctx.shadowBlur=10;rounded(5,20,31,27,9,"#627dc6");ctx.shadowBlur=0;
-    rounded(7,23,27,10,4,"#a17de9");rounded(11,35,18,4,2,"rgba(222,233,255,.72)");
+    ctx.shadowColor=level.theme.glow;ctx.shadowBlur=10;rounded(5,20,31,27,9,level.theme.accent);ctx.shadowBlur=0;
+    rounded(7,23,27,10,4,level.theme.topline);rounded(11,35,18,4,2,"rgba(222,233,255,.72)");
     // helmet
     ctx.shadowColor="#adbcff";ctx.shadowBlur=12;rounded(2,1,38,29,11,"#e3ebff");ctx.shadowBlur=0;
     rounded(6,5,30,21,8,"#6076af");rounded(9,10,24,11,5,"#111b35");
@@ -634,20 +680,24 @@
   }
   function onKey(event){
     if(event.code==="Space"||event.code==="ArrowUp"||event.code==="KeyW"){event.preventDefault();state.started=true;if(!state.auto)triggerJump();else if(player.grounded)triggerJump();}
-    if(event.code==="ArrowDown"||event.code==="KeyS"||event.code==="ShiftLeft"||event.code==="ShiftRight"){event.preventDefault();setDuck(true);}
+    if(event.code==="ArrowDown"||event.code==="KeyS"||event.code==="ShiftLeft"||event.code==="ShiftRight"){
+      event.preventDefault();
+      if(!event.repeat) beginManualDuck();
+      else if(!player.duckRequested) setDuck(true);
+    }
     if(event.code==="KeyP"){event.preventDefault();togglePause();}
     if(event.code==="KeyR"){event.preventDefault();restart();}
   }
-  function onKeyUp(event){if(event.code==="ArrowDown"||event.code==="KeyS"||event.code==="ShiftLeft"||event.code==="ShiftRight")setDuck(false);}
+  function onKeyUp(event){if(event.code==="ArrowDown"||event.code==="KeyS"||event.code==="ShiftLeft"||event.code==="ShiftRight")endManualDuck();}
   window.addEventListener("keydown",onKey);
   window.addEventListener("keyup",onKeyUp);
-  window.addEventListener("blur",()=>setDuck(false));
+  window.addEventListener("blur",endManualDuck);
   document.addEventListener("visibilitychange",()=>{if(document.hidden&&!state.paused){state.paused=true;setDuck(false);updateUI();}});
   $("autoBtn").addEventListener("click",()=>setAutopilot(!state.auto));
   $("pauseBtn").addEventListener("click",togglePause);
   $("restartBtn").addEventListener("click",restart);
   $("jumpBtn").addEventListener("click",()=>{if(state.auto)setAutopilot(false);triggerJump();});
-  const duckButton=$("duckBtn"),beginDuck=(event)=>{event.preventDefault();if(state.auto)setAutopilot(false);setDuck(true);},endDuck=()=>setDuck(false);
+  const duckButton=$("duckBtn"),beginDuck=(event)=>{event.preventDefault();beginManualDuck();},endDuck=()=>endManualDuck();
   duckButton.addEventListener("pointerdown",beginDuck);
   ["pointerup","pointercancel","pointerleave","lostpointercapture"].forEach(name=>duckButton.addEventListener(name,endDuck));
   $("soundBtn").addEventListener("click",toggleSound);
