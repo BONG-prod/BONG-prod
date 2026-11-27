@@ -40,6 +40,7 @@ jobs:
         run: |
           mkdir -p _site/game
           cp -R site/. _site/
+          if [ -f site/portfolio-originals-q32.zip ]; then unzip -o site/portfolio-originals-q32.zip -d _site/assets; fi
           cp game/index.html game/game.js game/style.css game/site-nav.css game/brand.css game/theme.js game/favicon.svg game/cover.svg _site/game/
           touch _site/.nojekyll
 
