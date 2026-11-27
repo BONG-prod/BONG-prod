@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ru">
+<html lang="ru" data-theme="dark">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
@@ -9,10 +9,13 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=20261127b" />
-  <link rel="stylesheet" href="site-nav.css?v=20261127a" />
-  <script src="game.js?v=20261127a" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Golos+Text:wght@400;500;600;700;800&family=Unbounded:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=20261127i" />
+  <link rel="stylesheet" href="site-nav.css?v=20261127i" />
+  <script src="theme.js?v=20261127i" defer></script>
+  <script src="game.js?v=20261127i" defer></script>
+  <link rel="stylesheet" href="../design-system.css?v=20261127i" />
+  <link rel="stylesheet" href="brand.css?v=20261127i" />
 </head>
 <body>
   <div class="ambient ambient-one"></div>
@@ -30,6 +33,7 @@
         <a href="./" class="active" aria-current="page">Игра</a>
       </nav>
       <div class="topbar-right">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Включить светлую тему" aria-pressed="false"><span aria-hidden="true">☼</span></button>
         <span class="online-pill"><i></i> GAME ONLINE</span>
         <a class="back-link" href="https://github.com/BONG-prod" target="_blank" rel="noreferrer">GITHUB <span>↗</span></a>
       </div>
