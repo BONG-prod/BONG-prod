@@ -32,6 +32,7 @@ jobs:
       - name: Validate JavaScript and compressed assets
         run: |
           node --check game/game.js
+          node --check game/theme.js
           node -e "const fs=require('fs'),z=require('zlib');new Function(z.gunzipSync(fs.readFileSync('site/app.js.gz')).toString('utf8'));"
           gzip -t site/app.js.gz site/styles.css.gz
 
@@ -39,7 +40,7 @@ jobs:
         run: |
           mkdir -p _site/game
           cp -R site/. _site/
-          cp game/index.html game/game.js game/style.css game/site-nav.css game/favicon.svg game/cover.svg _site/game/
+          cp game/index.html game/game.js game/style.css game/site-nav.css game/brand.css game/theme.js game/favicon.svg game/cover.svg _site/game/
           touch _site/.nojekyll
 
       - name: Configure GitHub Pages
