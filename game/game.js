@@ -220,7 +220,11 @@
     state.index = Math.max(0,Math.min(worlds.length-1,index));
     level = worlds[state.index];
     hazards = level.hazards.map((h,i)=>({...h,passed:false,phase:i*1.7})).sort((a,b)=>a.x-b.x);
-    hazards.forEach(h=>{if(h.type==="tunnel")h.floorY=getBaseGroundY(h.x+h.w/2);});
+    fitHazardsToTerrain();
+    hazards.forEach(h=>{
+      h.terrainY=getBaseGroundY(h.x+h.w/2);
+      if(h.type==="tunnel")h.floorY=h.terrainY;
+    });
     coins = makeCoins(level.coinGroups);
     particles = []; state.camera = 0; state.transition = 0; state.distanceScore = 0;
     player.x=140; player.ducking=false; player.duckRequested=false; player.h=58; player.y=getGroundY(player.x+player.w/2)-player.h; player.vy=0; player.grounded=true; player.run=0; player.trail=[];
@@ -262,18 +266,50 @@
     return t*t*(3-2*t);
   }
   function getBaseGroundY(x) {
-    const cycle=1260,offset=state.index*187+93;
-    const p=((x+offset)%cycle+cycle)%cycle;
-    let shape=0;
-    if(p<280) shape=-94*smoothStep(p/280);
-    else if(p<520) shape=-94;
-    else if(p<800) shape=-94+94*smoothStep((p-520)/280);
-    else if(p<920) shape=0;
-    else if(p<1040) shape=58*smoothStep((p-920)/120);
-    else if(p<1140) shape=58;
-    else shape=58*(1-smoothStep((p-1140)/120));
-    const smallBumps=Math.sin((x+offset)*0.008)*5+Math.sin((x+offset)*0.019)*2.2;
-    return GROUND+shape+smallBumps;
+    const worldOffset=state.index*173.7+91.4;
+    const phase=state.index*0.91;
+    const distance=x+worldOffset;
+    const broadHill=Math.sin(distance*0.00155+phase)*36;
+    const rollingHill=Math.sin(distance*0.0036+phase*1.7)*14;
+    const distantRidge=Math.sin(distance*0.00072+phase*2.2)*9;
+    const surfaceDetail=Math.sin(distance*0.0081+phase*2.9)*3;
+    return GROUND+broadHill+rollingHill+distantRidge+surfaceDetail;
+  }
+
+  function terrainSpreadAt(x,width) {
+    let low=Infinity,high=-Infinity;
+    const samples=Math.max(5,Math.ceil(width/12));
+    for(let i=0;i<=samples;i++){
+      const y=getBaseGroundY(x+width*i/samples);
+      low=Math.min(low,y);high=Math.max(high,y);
+    }
+    return high-low;
+  }
+
+  function fitHazardsToTerrain() {
+    hazards.sort((a,b)=>a.x-b.x);
+    for(let i=0;i<hazards.length;i++){
+      const h=hazards[i];
+      if(h.type==="tunnel")continue;
+      const originalX=h.x;
+      const previous=hazards[i-1];
+      const next=hazards[i+1];
+      const minX=Math.max(80,originalX-90,previous?previous.x+previous.w+145:80);
+      const maxX=Math.min(level.length-h.w-70,originalX+90,next?next.x-h.w-145:level.length-h.w-70);
+      if(minX>maxX)continue;
+      let bestX=originalX,bestCost=Infinity;
+      for(let candidate=Math.ceil(minX/4)*4;candidate<=maxX;candidate+=4){
+        const leftY=getBaseGroundY(candidate);
+        const rightY=getBaseGroundY(candidate+h.w);
+        const spread=terrainSpreadAt(candidate,h.w);
+        const grade=Math.abs(rightY-leftY);
+        const movePenalty=Math.abs(candidate-originalX)*0.14;
+        const cost=spread*1.55+grade*0.3+movePenalty;
+        if(cost<bestCost){bestCost=cost;bestX=candidate;}
+      }
+      h.x=Math.round(bestX);
+    }
+    hazards.sort((a,b)=>a.x-b.x);
   }
   function getGroundY(x) {
     const tunnel=hazards.find(h=>h.type==="tunnel" && x>=h.x-70 && x<=h.x+h.w+70);
@@ -322,10 +358,15 @@
   function jumpLead(h) {
     const flightFrames=(2*Math.abs(JUMP))/GRAVITY;
     const jumpRange=level.speed*flightFrames;
-    if(h.type==="gap") return Math.max(54,Math.min(112,jumpRange-h.w-player.w/2-18));
-    if(h.type==="drone") return Math.min(150,level.speed*28);
-    if(h.type==="saw") return Math.min(138,level.speed*27);
-    return Math.min(128,level.speed*25);
+    const currentGround=getGroundY(player.x+player.w/2);
+    const obstacleGround=getGroundY(h.x+h.w/2);
+    const rise=Math.max(-24,Math.min(34,currentGround-obstacleGround));
+    if(h.type==="gap"){
+      const lead=jumpRange-h.w-player.w*0.55-22-rise*0.7;
+      return Math.max(66,Math.min(132,lead));
+    }
+    const timing=level.speed*(h.type==="drone"||h.type==="saw"?26:23);
+    return Math.max(72,Math.min(132,timing-rise*0.45));
   }
   function autopilot() {
     if(!state.auto) return;
