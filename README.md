@@ -9,8 +9,9 @@
 
 ### Проекты
 
-- **IcySell** — приложение для Windows.
+- **Icysell Web** — [открыть сайт](https://bong-prod.github.io/BONG-prod/icysell/).
 - **BONG Runner** — [браузерная игра с автопилотом](https://bong-prod.github.io/BONG-prod/).
+- **IcySell Desktop** — приложение для Windows.
 - **Web Platform & Discord Bot** — веб-проекты и интеграции.
 
 ### Технологии

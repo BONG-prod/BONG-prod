@@ -1,0 +1,5 @@
+Icysell static GitHub Pages edition.
+Entry: /BONG-prod/icysell/
+PHP templates are pre-rendered to static HTML. Portfolio filtering is client-side.
+Server-only features (OAuth, sessions, MySQL, dynamic shop/account) are not deployed.
+Do not add private configuration or tokens to this public folder.
