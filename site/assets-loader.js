@@ -17,7 +17,7 @@
     let saved = "dark";
     try { const value = localStorage.getItem(THEME_KEY); if (value === "light" || value === "dark") saved = value; } catch (_) {}
     apply(saved);
-    button?.addEventListener("click", () => apply(document.documentElement.dataset.theme === "dark" ? "light" : "dark", true));
+    button?.addEventListener("click", event => { event.preventDefault(); event.stopImmediatePropagation(); apply(document.documentElement.dataset.theme === "dark" ? "light" : "dark", true); }, true);
     window.addEventListener("storage", event => { if (event.key === THEME_KEY) apply(event.newValue); });
   }
   async function unpack(path) {
