@@ -29,10 +29,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Validate JavaScript
+      - name: Validate JavaScript and compressed assets
         run: |
           node --check game/game.js
-          node --check site/app.js
+          node -e "const fs=require('fs'),z=require('zlib');new Function(z.gunzipSync(fs.readFileSync('site/app.js.gz')).toString('utf8'));"
+          gzip -t site/app.js.gz site/styles.css.gz
 
       - name: Build combined website
         run: |
