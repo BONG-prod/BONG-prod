@@ -1,10 +1,11 @@
-name: Deploy BONG Runner to GitHub Pages
+name: Deploy Icysell + BONG Runner to GitHub Pages
 
 on:
   push:
     branches:
       - main
     paths:
+      - "site/**"
       - "game/**"
       - ".github/workflows/pages.yml"
   workflow_dispatch:
@@ -28,19 +29,27 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Validate game JavaScript
-        run: node --check game.js
-        working-directory: game
+      - name: Validate JavaScript
+        run: |
+          node --check game/game.js
+          node --check site/app.js
+
+      - name: Build combined website
+        run: |
+          mkdir -p _site/game
+          cp -R site/. _site/
+          cp game/index.html game/game.js game/style.css game/site-nav.css game/favicon.svg game/cover.svg _site/game/
+          touch _site/.nojekyll
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
         with:
           enablement: true
 
-      - name: Upload game site
+      - name: Upload combined site
         uses: actions/upload-pages-artifact@v3
         with:
-          path: game
+          path: _site
 
       - name: Deploy to GitHub Pages
         id: deployment
