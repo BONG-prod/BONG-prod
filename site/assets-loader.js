@@ -14,7 +14,6 @@
     style.dataset.icysell = "site-styles";
     style.textContent = css;
     document.head.append(style);
-
     const javascript = await unpack("./app.js.gz");
     const script = document.createElement("script");
     script.dataset.icysell = "site-app";
