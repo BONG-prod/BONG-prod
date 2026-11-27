@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/profile-banner.svg" alt="BONG-prod" width="100%" />
+  <img src="assets/profile-banner.png" alt="BONG-prod" width="100%" />
   <p><strong>Windows & Desktop · Python · JavaScript · Automation</strong></p>
   <p>Создаю Windows-приложения, веб-проекты и инструменты автоматизации.</p>
   <a href="https://github.com/BONG-prod?tab=repositories">
